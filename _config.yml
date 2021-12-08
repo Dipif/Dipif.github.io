@@ -1,4 +1,4 @@
-# Site settings
+ï»¿# Site settings
 title: Hello
 description: 'for record' # this means to ignore newlines until "baseurl:"
 permalink: ':title:output_ext'
@@ -24,8 +24,8 @@ logo-dark: "/assets/img/branding/MVM-logo-full-dark.svg"
 highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
 
 # Author settings
-author: ÀÌ´ë°â # add your name
-about-author: ¾È³çÇÏ¼¼¿ä. 2022³â Á¹¾÷ ¿¹Á¤ÀÔ´Ï´Ù. ÇöÀç ÇÁ·Î±×·¡¸Ó½ºÀÇ AI µ¥ºêÄÚ½º¸¦ ¼ö°­ ÁßÀÔ´Ï´Ù.
+author: ì´ëŒ€ê²¸ # add your name
+about-author: ì•ˆë…•í•˜ì„¸ìš”. 2022ë…„ ì¡¸ì—… ì˜ˆì •ì…ë‹ˆë‹¤. í˜„ì¬ í”„ë¡œê·¸ë˜ë¨¸ìŠ¤ì˜ AI ë°ë¸Œì½”ìŠ¤ë¥¼ ìˆ˜ê°• ì¤‘ì…ë‹ˆë‹¤.
 
 # Contact links
 email: dipif361@gmail.com # Add your Email address
