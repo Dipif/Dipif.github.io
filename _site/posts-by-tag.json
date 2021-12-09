@@ -6,6 +6,8 @@
   "tag" : "Git",
   "posts" : [
       
+      "./TIL.markdown.bak",
+      
       "./TIL.html"
       
     ]
@@ -15,6 +17,8 @@
   {
   "tag" : "Til",
   "posts" : [
+      
+      "./TIL.markdown.bak",
       
       "./TIL.html"
       
