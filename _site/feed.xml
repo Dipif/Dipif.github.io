@@ -1,4 +1,36 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-09T23:56:43+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hello</title><subtitle>for record</subtitle><author><name>이대겸</name></author><entry><title type="html">Github Blog 첫 글</title><link href="http://localhost:4000/Github-Blog-%EC%B2%AB-%EA%B8%80.html" rel="alternate" type="text/html" title="Github Blog 첫 글" /><published>2021-12-08T20:10:00+09:00</published><updated>2021-12-08T20:10:00+09:00</updated><id>http://localhost:4000/Github%20Blog%20%EC%B2%AB%20%EA%B8%80</id><content type="html" xml:base="http://localhost:4000/Github-Blog-%EC%B2%AB-%EA%B8%80.html">&lt;p&gt;블로그 같은건 처음 해보는데 Github로 시작하려니 어려운 점이 많네요.&lt;/p&gt;</content><author><name>이대겸</name></author><summary type="html">블로그 같은건 처음 해보는데 Github로 시작하려니 어려운 점이 많네요.</summary></entry><entry><title type="html">TIL 1</title><link href="http://localhost:4000/TIL.html" rel="alternate" type="text/html" title="TIL 1" /><published>2021-12-08T20:10:00+09:00</published><updated>2021-12-08T20:10:00+09:00</updated><id>http://localhost:4000/TIL</id><content type="html" xml:base="http://localhost:4000/TIL.html">&lt;p&gt;어제 오늘 동안 데브코스 강좌의 내용과 더불어 Git의 사용법에 대해 공부하였다.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-10T00:51:30+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hello</title><subtitle>for record</subtitle><author><name>이대겸</name></author><entry><title type="html">TIL 1</title><link href="http://localhost:4000/TIL.html" rel="alternate" type="text/html" title="TIL 1" /><published>2021-12-09T23:55:00+09:00</published><updated>2021-12-09T23:55:00+09:00</updated><id>http://localhost:4000/TIL</id><content type="html" xml:base="http://localhost:4000/TIL.html">&lt;p&gt;어제 열심히 cmp_to_key로 구현했던 문제가 공교롭게도 오늘 강의에서 다루어졌다.
+강의에선 깔끔한 방법으로 key를 만들어 구현해냈는데, 거기서 한 문자열을 여러번 반복해서 비교하는 테크닉을 사용하였다.
+원형 문자열에 관한 문제를 풀 때도 그렇고 종종 쓰이는 듯 하다.&lt;/p&gt;
+
+&lt;p&gt;오늘도 Git에 대해 조금 더 공부하였는데 merge와 branch에 대해 알게 되었다. 
+한 branch에서 막 문서를 수정하고 다른 branch로 이동하니까 그 문서가 이전 상태 그대로 돌아가있는게 충격적이였다.
+간단하게 정리해보면&lt;/p&gt;
+
+&lt;p&gt;cd [경로] : 기준 폴더를 이동할 때 쓴다.&lt;/p&gt;
+
+&lt;p&gt;git init : 로컬 저장소 초기화&lt;/p&gt;
+
+&lt;p&gt;git add [파일이름 또는 경로] : 해당 파일을 인덱스에 등록. 경로내 모든파일을 add하고싶을 땐 이름 대신 ./ 을 쓰면 된다.&lt;/p&gt;
+
+&lt;p&gt;git commit -m “메세지” : 인덱스에 등록된 변경사항을 바탕으로 현재 진행 상태를 로컬 저장소에 저장.&lt;/p&gt;
+
+&lt;p&gt;git push [url] [branch] : 원격 저장소의 해당 branch에 지금까지 commit한 것들을 반영한다.&lt;/p&gt;
+
+&lt;p&gt;git pull [url] [branch] : 원격 저장소의 해당 branch의 내용을 로컬 저장소로 가져온다.&lt;/p&gt;
+
+&lt;p&gt;git status : 말 그대로 상태를 보여준다.&lt;/p&gt;
+
+&lt;p&gt;git log (–graph) (–oneline) : 지금까지 commit 한 log들을 보여준다. 괄호안의 내용을 입력하면 간단하게 나온다.&lt;/p&gt;
+
+&lt;p&gt;git branch : branch들을 보여준다.&lt;/p&gt;
+
+&lt;p&gt;git branch (-d) [branch 이름] : branch를 만든다. -d를 입력하면 삭제한다.&lt;/p&gt;
+
+&lt;p&gt;git checkout (-b) [branch 이름] : branch로 이동한다. -b를 입력하면 그 branch를 생성하며 이동한다.&lt;/p&gt;
+
+&lt;p&gt;git merge [branch 이름] : branch를 합친다. 충돌이 발생하면 수동으로 해결해야 한다.&lt;/p&gt;
+
+&lt;p&gt;이 정도인 것 같다. 일단 혼자서 가지고 놀만큼의 기초는 뗀 것 같고 마침 슬랙에서 한 분이 Git 공부에 관한 조언을 해 주셔서 그 부분을 봐야겠다.&lt;/p&gt;</content><author><name>이대겸</name></author><category term="Til" /><category term="Git" /><summary type="html">어제 열심히 cmp_to_key로 구현했던 문제가 공교롭게도 오늘 강의에서 다루어졌다. 강의에선 깔끔한 방법으로 key를 만들어 구현해냈는데, 거기서 한 문자열을 여러번 반복해서 비교하는 테크닉을 사용하였다. 원형 문자열에 관한 문제를 풀 때도 그렇고 종종 쓰이는 듯 하다.</summary></entry><entry><title type="html">TIL 1</title><link href="http://localhost:4000/TIL.html" rel="alternate" type="text/html" title="TIL 1" /><published>2021-12-08T20:10:00+09:00</published><updated>2021-12-08T20:10:00+09:00</updated><id>http://localhost:4000/TIL</id><content type="html" xml:base="http://localhost:4000/TIL.html">&lt;p&gt;어제 오늘 동안 데브코스 강좌의 내용과 더불어 Git의 사용법에 대해 공부하였다.&lt;/p&gt;
 
 &lt;p&gt;이제 Git에서 뭔가 기여할 때 clone 해와서 수정하고 add, commit 과정을 거쳐 push까지 하면 되는 건 알았다.&lt;/p&gt;
 
@@ -22,28 +54,29 @@
 &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cmp_to_key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cmp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;이와 같이 쓰면 리스트 l 을 [1, 2, 3]으로 정렬해 준다.&lt;/p&gt;</content><author><name>이대겸</name></author><summary type="html">어제 오늘 동안 데브코스 강좌의 내용과 더불어 Git의 사용법에 대해 공부하였다.</summary></entry><entry><title type="html">TIL 1</title><link href="http://localhost:4000/TIL.html" rel="alternate" type="text/html" title="TIL 1" /><published>2021-12-08T20:10:00+09:00</published><updated>2021-12-08T20:10:00+09:00</updated><id>http://localhost:4000/TIL</id><content type="html" xml:base="http://localhost:4000/TIL.html">&lt;p&gt;어제 오늘 동안 데브코스 강좌의 내용과 더불어 Git의 사용법에 대해 공부하였다.&lt;/p&gt;
+&lt;p&gt;이와 같이 쓰면 리스트 l 을 [1, 2, 3]으로 정렬해 준다.&lt;/p&gt;</content><author><name>이대겸</name></author><summary type="html">어제 오늘 동안 데브코스 강좌의 내용과 더불어 Git의 사용법에 대해 공부하였다.</summary></entry><entry><title type="html">TIL 1</title><link href="http://localhost:4000/TIL.markdown.bak" rel="alternate" type="text/html" title="TIL 1" /><published>2021-12-08T20:10:00+09:00</published><updated>2021-12-08T20:10:00+09:00</updated><id>http://localhost:4000/TIL.markdown</id><content type="html" xml:base="http://localhost:4000/TIL.markdown.bak">어제 오늘 동안 데브코스 강좌의 내용과 더불어 Git의 사용법에 대해 공부하였다.
 
-&lt;p&gt;이제 Git에서 뭔가 기여할 때 clone 해와서 수정하고 add, commit 과정을 거쳐 push까지 하면 되는 건 알았다.&lt;/p&gt;
+이제 Git에서 뭔가 기여할 때 clone 해와서 수정하고 add, commit 과정을 거쳐 push까지 하면 되는 건 알았다.
 
-&lt;p&gt;강의에선 이미 알고 있던 자료구조에 대한 내용을 아주 빠르게 진행하고 있어서 복습하는 기분으로 보고 있다.&lt;/p&gt;
+강의에선 이미 알고 있던 자료구조에 대한 내용을 아주 빠르게 진행하고 있어서 복습하는 기분으로 보고 있다.
 
-&lt;p&gt;도중에 나온 실습 문제에서 Python의 sort만으로 풀기엔 key parameter를 정하기 곤란한 문제가 있었다.&lt;/p&gt;
+도중에 나온 실습 문제에서 Python의 sort만으로 풀기엔 key parameter를 정하기 곤란한 문제가 있었다.
 
-&lt;p&gt;C++이면 그냥 compare 함수를 만들어서 풀었을텐데 싶어서 찾아보니 python에도 비슷한 기능을 하는 함수가 있었다.&lt;/p&gt;
+C++이면 그냥 compare 함수를 만들어서 풀었을텐데 싶어서 찾아보니 python에도 비슷한 기능을 하는 함수가 있었다.
 
-&lt;p&gt;functools 모듈의 cmp_to_key 라는 함수인데 원하는 방식으로 크기를 비교하여 그 결과를 음수, 0, 양수로 리턴하면 되는 것이다.&lt;/p&gt;
+functools 모듈의 cmp_to_key 라는 함수인데 원하는 방식으로 크기를 비교하여 그 결과를 음수, 0, 양수로 리턴하면 되는 것이다.
 
-&lt;p&gt;예를 들면&lt;/p&gt;
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kn&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;functools&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cmp_to_key&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;cmp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;elif&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-		&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-	&lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+예를 들면
+~~~python
+from functools import cmp_to_key
+def cmp(a, b) :
+	if a &gt; b :
+		return 1
+	elif a &lt; b :
+		return -1
+	return 0
 	
-&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;l&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;sort&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;key&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;cmp_to_key&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;cmp&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;이와 같이 쓰면 리스트 l 을 [1, 2, 3]으로 정렬해 준다.&lt;/p&gt;</content><author><name>이대겸</name></author><summary type="html">어제 오늘 동안 데브코스 강좌의 내용과 더불어 Git의 사용법에 대해 공부하였다.</summary></entry></feed>
+l = [3, 1, 2]
+l.sort(key = cmp_to_key(cmp))
+~~~
+이와 같이 쓰면 리스트 l 을 [1, 2, 3]으로 정렬해 준다.</content><author><name>이대겸</name></author><summary type="html">어제 오늘 동안 데브코스 강좌의 내용과 더불어 Git의 사용법에 대해 공부하였다.</summary></entry><entry><title type="html">Github Blog 첫 글</title><link href="http://localhost:4000/Github-Blog-%EC%B2%AB-%EA%B8%80.html" rel="alternate" type="text/html" title="Github Blog 첫 글" /><published>2021-12-08T20:10:00+09:00</published><updated>2021-12-08T20:10:00+09:00</updated><id>http://localhost:4000/Github%20Blog%20%EC%B2%AB%20%EA%B8%80</id><content type="html" xml:base="http://localhost:4000/Github-Blog-%EC%B2%AB-%EA%B8%80.html">&lt;p&gt;블로그 같은건 처음 해보는데 Github로 시작하려니 어려운 점이 많네요.&lt;/p&gt;</content><author><name>이대겸</name></author><summary type="html">블로그 같은건 처음 해보는데 Github로 시작하려니 어려운 점이 많네요.</summary></entry></feed>

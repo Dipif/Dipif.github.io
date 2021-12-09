@@ -2,7 +2,7 @@
 layout: post
 read_time: true
 show_date: true
-title:  TIL 1
+title:  TIL 2
 date:   2021-12-9 23:55
 tags: [Til, Git]
 author: 이대겸
