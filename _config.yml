@@ -25,7 +25,7 @@ highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code h
 
 # Author settings
 author: 이대겸 # add your name
-author-pic: "/assets/img/profile_image.jpg"
+author-pic: "/profile_image.jpg"
 about-author: 안녕하세요. 2022년 졸업 예정입니다. 현재 프로그래머스의 AI 데브코스를 수강 중입니다.
 
 
@@ -33,8 +33,6 @@ about-author: 안녕하세요. 2022년 졸업 예정입니다. 현재 프로그�
 email: dipif361@gmail.com # Add your Email address
 website: https://dipif.github.io # Add your website
 github: Dipif # Add your Github handle
-
-# Newsletter
 
 # Disqus
 # Tracker
