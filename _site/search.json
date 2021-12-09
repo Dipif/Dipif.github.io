@@ -1,16 +1,6 @@
 [
   
     {
-      "title"       : "TIL 1",
-      "category"    : "",
-      "tags"        : "Til, Git",
-      "url"         : "./TIL.markdown.bak",
-      "date"        : "2021-12-09 23:55:00 +0900",
-      "description" : "",
-      "content"     : "어제 열심히 cmp_to_key로 구현했던 문제가 공교롭게도 오늘 강의에서 다루어졌다.강의에선 깔끔한 방법으로 key를 만들어 구현해냈는데, 거기서 한 문자열을 여러번 반복해서 비교하는 테크닉을 사용하였다.원형 문자열에 관한 문제를 풀 때도 그렇고 종종 쓰이는 듯 하다.오늘도 Git에 대해 조금 더 공부하였는데 merge와 branch에 대해 알게 되었다. 한 branch에서 막 문서를 수정하고 다른 branch로 이동하니까 그 문서가 이전 상태 그대로 돌아가있는게 충격적이였다.간단하게 정리해보면cd [경로] : 기준 폴더를 이동할 때 쓴다.git init : 로컬 저장소 초기화git add [파일이름 또는 경로] : 해당 파일을 인덱스에 등록. 경로내 모든파일을 add하고싶을 땐 이름 대신 ./ 을 쓰면 된다.git commit -m \"메세지\" : 인덱스에 등록된 변경사항을 바탕으로 현재 진행 상태를 로컬 저장소에 저장. git push [url] [branch] : 원격 저장소의 해당 branch에 지금까지 commit한 것들을 반영한다.git pull [url] [branch] : 원격 저장소의 해당 branch의 내용을 로컬 저장소로 가져온다.git status : 말 그대로 상태를 보여준다.git log (--graph) (--oneline) : 지금까지 commit 한 log들을 보여준다. 괄호안의 내용을 입력하면 간단하게 나온다.git branch : branch들을 보여준다.git branch (-d) [branch 이름] : branch를 만든다. -d를 입력하면 삭제한다.git checkout (-b) [branch 이름] : branch로 이동한다. -b를 입력하면 그 branch를 생성하며 이동한다.git merge [branch 이름] : branch를 합친다. 충돌이 발생하면 수동으로 해결해야 한다.이 정도인 것 같다. 일단 혼자서 가지고 놀만큼의 기초는 뗀 것 같고 마침 슬랙에서 한 분이 Git 공부에 관한 조언을 해 주셔서 그 부분을 봐야겠다."
-    } ,
-  
-    {
       "title"       : "TIL 2",
       "category"    : "",
       "tags"        : "Til, Git",
