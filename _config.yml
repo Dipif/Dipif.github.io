@@ -20,12 +20,14 @@ logo-icon-SEO: "/assets/img/branding/MVM-symbol-black.png" # must be a non SVG f
 # the browser is closed or not)
 night_mode: "manual"
 
-logo-dark: "/assets/img/branding/MVM-logo-full-dark.svg"
+logo-dark: "/assets/img/branding/long-short.png"
 highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
 
 # Author settings
 author: 이대겸 # add your name
+author-pic: "/assets/img/profile_image.jpg"
 about-author: 안녕하세요. 2022년 졸업 예정입니다. 현재 프로그래머스의 AI 데브코스를 수강 중입니다.
+
 
 # Contact links
 email: dipif361@gmail.com # Add your Email address
@@ -33,7 +35,6 @@ website: https://dipif.github.io # Add your website
 github: Dipif # Add your Github handle
 
 # Newsletter
-mailchimp: "https://github.us1.list-manage.com/subscribe/post?u=8ece198b3eb260e6838461a60&amp;id=397d90b5f4"
 
 # Disqus
 # Tracker
