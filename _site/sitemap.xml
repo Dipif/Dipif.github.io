@@ -3,7 +3,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/TIL4/2021/12</loc>
+      <loc>http://localhost:4000/year/month/day/title</loc>
       
         <lastmod>2021-12-12T00:25:00+09:00</lastmod>
       
@@ -16,7 +16,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/TIL3/2021/12</loc>
+      <loc>http://localhost:4000/year/month/day/title</loc>
       
         <lastmod>2021-12-11T01:35:00+09:00</lastmod>
       
@@ -29,7 +29,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/TIL2/2021/12</loc>
+      <loc>http://localhost:4000/year/month/day/title</loc>
       
         <lastmod>2021-12-09T23:55:00+09:00</lastmod>
       
@@ -42,7 +42,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/Github-Blog-%EC%B2%AB-%EA%B8%80/2021/12</loc>
+      <loc>http://localhost:4000/year/month/day/title</loc>
       
         <lastmod>2021-12-08T20:10:00+09:00</lastmod>
       
@@ -55,7 +55,7 @@
   
     
     <url>
-      <loc>http://localhost:4000/TIL1/2021/12</loc>
+      <loc>http://localhost:4000/year/month/day/title</loc>
       
         <lastmod>2021-12-08T20:10:00+09:00</lastmod>
       
@@ -71,7 +71,7 @@
     <url>
       <loc>http://localhost:4000/404.html</loc>
       
-        <lastmod>2021-12-12T22:26:44+09:00</lastmod>
+        <lastmod>2021-12-12T22:54:39+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -86,7 +86,7 @@
     <url>
       <loc>http://localhost:4000/about.html</loc>
       
-        <lastmod>2021-12-12T22:26:44+09:00</lastmod>
+        <lastmod>2021-12-12T22:54:39+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -101,7 +101,7 @@
     <url>
       <loc>http://localhost:4000/all-posts.json</loc>
       
-        <lastmod>2021-12-12T22:26:44+09:00</lastmod>
+        <lastmod>2021-12-12T22:54:39+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -116,7 +116,7 @@
     <url>
       <loc>http://localhost:4000/archive.html</loc>
       
-        <lastmod>2021-12-12T22:26:44+09:00</lastmod>
+        <lastmod>2021-12-12T22:54:39+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -131,7 +131,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2021-12-12T22:26:44+09:00</lastmod>
+        <lastmod>2021-12-12T22:54:39+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -146,7 +146,7 @@
     <url>
       <loc>http://localhost:4000/ipfs-404.html</loc>
       
-        <lastmod>2021-12-12T22:26:44+09:00</lastmod>
+        <lastmod>2021-12-12T22:54:39+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -161,7 +161,7 @@
     <url>
       <loc>http://localhost:4000/posts-by-tag.json</loc>
       
-        <lastmod>2021-12-12T22:26:44+09:00</lastmod>
+        <lastmod>2021-12-12T22:54:39+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -176,7 +176,7 @@
     <url>
       <loc>http://localhost:4000/search.json</loc>
       
-        <lastmod>2021-12-12T22:26:44+09:00</lastmod>
+        <lastmod>2021-12-12T22:54:39+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -193,7 +193,7 @@
     <url>
       <loc>http://localhost:4000/tag.html</loc>
       
-        <lastmod>2021-12-12T22:26:44+09:00</lastmod>
+        <lastmod>2021-12-12T22:54:39+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -208,7 +208,7 @@
     <url>
       <loc>http://localhost:4000/tags.html</loc>
       
-        <lastmod>2021-12-12T22:26:44+09:00</lastmod>
+        <lastmod>2021-12-12T22:54:39+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -223,7 +223,7 @@
     <url>
       <loc>http://localhost:4000/feed.xml</loc>
       
-        <lastmod>2021-12-12T22:26:44+09:00</lastmod>
+        <lastmod>2021-12-12T22:54:39+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
