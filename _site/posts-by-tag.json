@@ -6,7 +6,7 @@
   "tag" : "Git",
   "posts" : [
       
-      "./year/month/day/title"
+      "./2021/TIL2"
       
     ]
   } ,
@@ -16,11 +16,11 @@
   "tag" : "Til",
   "posts" : [
       
-      "./year/month/day/title",
+      "./2021/TIL4",
       
-      "./year/month/day/title",
+      "./2021/TIL3",
       
-      "./year/month/day/title"
+      "./2021/TIL2"
       
     ]
   } 
