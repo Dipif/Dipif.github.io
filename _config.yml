@@ -1,7 +1,7 @@
 ﻿# Site settings
 title: Hello
 description: 'for record' # this means to ignore newlines until "baseurl:"
-permalink: '/:title/:year/:month'
+permalink: '/year/month/day/title'
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://Dipif.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 logo: "/assets/img/branding/long-short.png"
