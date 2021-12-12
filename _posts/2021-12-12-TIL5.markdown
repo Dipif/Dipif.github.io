@@ -29,7 +29,7 @@ post를 좀 더 정리하기 위해서도 메뉴를 조정해야 할 것 같은�
 가리키는 위치에 필요한 파일이 없다거나 하는 경우로 무작정 따라할 수가 없다. 그게 이 문서를 읽고있는 이유기도 하다.
 
 한편 include에 대한 이해는 큰 도움이 되었다. 이 블로그의 내용이 들어있는 git 저장소에는 다양한 html 파일들이 있는데, 
-예를 들어 _layout 폴더의 home-page.html 파일에서 "{% include search.html %}" 라는 표현이 있으면 
+예를 들어 _layout 폴더의 home-page.html 파일에서 \{% include search.html %\} 라는 표현이 있으면 
 home-page layout을 사용할 때(위의 front matter 부분에 layout: home-page를 쓰면 된다.) 
 _includes 폴더에서 search.html파일을 불러와 화면상에 표시해준다. 이걸로 post에서 필요없는 news letter를 드디어 
 삭제할 수 있었다.
