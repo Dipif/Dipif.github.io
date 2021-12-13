@@ -201,7 +201,7 @@
               </div>
             </a>
           </li>
-          <li>
+          <!--li>
             <a href="./feed.xml">
               <div class="left">
                 Atom feed
@@ -210,7 +210,7 @@
                 <svg width='24px' aria-hidden="true" focusable="false" role="img" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M80 352c26.467 0 48 21.533 48 48s-21.533 48-48 48-48-21.533-48-48 21.533-48 48-48m0-32c-44.183 0-80 35.817-80 80s35.817 80 80 80 80-35.817 80-80-35.817-80-80-80zm367.996 147.615c-6.448-237.848-198.06-429.164-435.61-435.61C5.609 31.821 0 37.229 0 44.007v8.006c0 6.482 5.146 11.816 11.626 11.994 220.81 6.05 398.319 183.913 404.367 404.367.178 6.48 5.512 11.626 11.994 11.626h8.007c6.778 0 12.185-5.609 12.002-12.385zm-144.245-.05c-6.347-158.132-133.207-284.97-291.316-291.316C5.643 175.976 0 181.45 0 188.247v8.005c0 6.459 5.114 11.72 11.567 11.989 141.134 5.891 254.301 119.079 260.192 260.192.269 6.453 5.531 11.567 11.989 11.567h8.005c6.798 0 12.271-5.643 11.998-12.435z"></path></svg>
               </div>
             </a>
-          </li>
+          </li-->
         </ul>
       </nav>
       
@@ -272,7 +272,7 @@
   </span>
 
 			<div class="post-excerpt">
-				<p>일요일이 늘 그렇듯 개인 사정으로 크게 공부는 못했으나.. 일단 오늘도 백준 2문제를 푸는 걸로 이전에 얻었던 8일 연속 문제 해결 뱃지와 동일한 기록에 도달하였다. 목표는 현재 AI 데브코스를 듣는 기간과 거의 비슷한 128일 뱃지를 얻는 것!</p><p>그 외에는 이 블로그 관리를 위해 jekyll 공식 문서를 조금 읽어보았다.</p><p>front matter는</p><pre><code class="language-C">---layout: postread_time: true---</code></pre><p>이런 것으로 두 줄의 ‘—’ 사이에 변수이름:값 형식으로 나열하면 되는데 이는 yaml에서 사용되는 데이터 작성을 위한 포맷이라고 한다.</p><p>page는 자기소개 페이지같은 곳에 사용하는데 문제는 새로운 page를 만들었을 때 메뉴에 추가하는 방법을 아직 못 찾았다. post를 좀 더 정리하기 위해서도 메뉴를 조정해야 할 것 같은데 그 방법을 소개해주는 글들과 사용하는 theme가 다르니 가리키는...<a class="read-more" href="./2021/TIL5"> read more</a>
+				<p>일요일이 늘 그렇듯 개인 사정으로 크게 공부는 못했으나.. 일단 오늘도...<a class="read-more" href="./2021/TIL5"> read more</a>
 			</div>
 		</div>
 	
@@ -311,7 +311,7 @@
   </span>
 
 			<div class="post-excerpt">
-				<p>종만북을 보면서 알고리즘 공부를 하였다.balanced tree중 구현하기 쉽다는 트립과 세그먼트 트리, 그리고 펜윅 트리를 배웠다.</p><p>트립은 노드를 좌우로 크기에 따라 정렬하는 것 뿐만이 아니라 각 노드에 난수로 우선순위를 부여하여 위에서 아래로 그 우선순위에 따라서 또 배열한다. 소수 판별에 난수를 사용하는 알고리즘을 본 적은 있지만자료구조에 난수라니 대단한 아이디어다.그런데 이게 노드를 추가하고 삭제하는 과정이 영 이해가 안가서.. 추후에 더 이해한 후에 따로 포스트를 해 봐야겠다.</p><p>세그먼트 트리는 어떤 배열이 있을 때 그 구간을 반으로 쪼개서 좌우 자식노드로 붙이고 다시 반쪽 구간들을 반토막 내서자식의 자식으로 붙이고.. 이렇게 해서 log n 높이의 트리를 만드는 것이다. 그리고 구하고자 하는 값을 트리의 노드들이 나타내는구간들에 대해 미리 구해놓고, 임의의...<a class="read-more" href="./2021/TIL4"> read more</a>
+				<p>종만북을 보면서 알고리즘 공부를 하였다.balanced tree중 구현하기 쉽다는 트립과 세그먼트...<a class="read-more" href="./2021/TIL4"> read more</a>
 			</div>
 		</div>
 	
@@ -350,7 +350,124 @@
   </span>
 
 			<div class="post-excerpt">
-				<p>오늘 강의에서 dfs를 stack을 이용해서 구현하는 걸 보았다. 정점 탐색이 아니라 간선 탐색이라 조금은 다르긴 하겠지만 일반적인 dfs의 경우에도 비슷하게 구현할 수 있을 것이다. 사실 함수 호출이 다 스택 영역에서 이루어 지는 만큼 그를 응용하면구현할 수 있는 건 당연하겠지만, 생각했던 것보다 훨씬 간단해서 알아두면 활용할 데가 많을 것 같았다. 안그래도 개인적으로 재귀에 대해 구현은 보기 좋으나 비효율적인 면이 있어 싫어하는데 앞으로 재귀 문제에선 전부 stack구현을 시도해봐야겠다.</p><p>한편 이번 강의에서 하필 stack을 사용한 이유는 정점의 갯수가 최대 1만개까지 가기 때문으로 보인다.파이썬은 재귀 횟수에 1000의 제한이 있고, C++은 Visual studio 기준으로 1mb의 stack memory 제한이 있다.이를 해제하는 방법은 있으나, 제한에는 나름의 이유가 있을...<a class="read-more" href="./2021/TIL3"> read more</a>
+				<p>오늘 강의에서 dfs를 stack을 이용해서 구현하는 걸 보았다. 정점 탐색이...<a class="read-more" href="./2021/TIL3"> read more</a>
+			</div>
+		</div>
+	
+		<div class="post">
+			
+
+			<a class="post-list-title" href="./2021/TIL2">TIL 2</a>
+			
+
+  <span class = "post-card-meta">
+  
+  
+    <span class="meta-pre"></span>
+  
+  
+    
+      
+      <span class="page_meta-date">
+        <time datetime="2021-12-09T23:55:00+09:00">December 9, 2021</time>
+      </span>
+    
+    
+      <span class="meta-sep"></span>
+    
+  
+  
+    
+    
+    <span class="page_meta-readtime">
+      
+        1 minute read
+      
+    </span>
+  
+  
+  </span>
+
+			<div class="post-excerpt">
+				<p>어제 열심히 cmp_to_key로 구현했던 문제가 공교롭게도 오늘 강의에서 다루어졌다.강의에선 깔끔한...<a class="read-more" href="./2021/TIL2"> read more</a>
+			</div>
+		</div>
+	
+		<div class="post">
+			
+
+			<a class="post-list-title" href="./2021/Github-Blog-%EC%B2%AB-%EA%B8%80">Github Blog 첫 글</a>
+			
+
+  <span class = "post-card-meta">
+  
+  
+    <span class="meta-pre"></span>
+  
+  
+    
+      
+      <span class="page_meta-date">
+        <time datetime="2021-12-08T20:10:00+09:00">December 8, 2021</time>
+      </span>
+    
+    
+      <span class="meta-sep"></span>
+    
+  
+  
+    
+    
+    <span class="page_meta-readtime">
+      
+        less than 1 minute read
+      
+    </span>
+  
+  
+  </span>
+
+			<div class="post-excerpt">
+				<p>블로그 같은건 처음 해보는데 Github로 시작하려니 어려운 점이 많네요.</p><a class="read-more" href="./2021/Github-Blog-%EC%B2%AB-%EA%B8%80"> read more</a>
+			</div>
+		</div>
+	
+		<div class="post">
+			
+
+			<a class="post-list-title" href="./2021/TIL1">TIL 1</a>
+			
+
+  <span class = "post-card-meta">
+  
+  
+    <span class="meta-pre"></span>
+  
+  
+    
+      
+      <span class="page_meta-date">
+        <time datetime="2021-12-08T20:10:00+09:00">December 8, 2021</time>
+      </span>
+    
+    
+      <span class="meta-sep"></span>
+    
+  
+  
+    
+    
+    <span class="page_meta-readtime">
+      
+        less than 1 minute read
+      
+    </span>
+  
+  
+  </span>
+
+			<div class="post-excerpt">
+				<p>어제 오늘 동안 데브코스 강좌의 내용과 더불어 Git의 사용법에 대해...<a class="read-more" href="./2021/TIL1"> read more</a>
 			</div>
 		</div>
 	
