@@ -13,8 +13,46 @@
     
       
   {
+  "tag" : "Jupyter Notebook",
+  "posts" : [
+      
+      "./2021/TIL6.markdown",
+      
+      "./2021/TIL6"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "Markdown",
+  "posts" : [
+      
+      "./2021/TIL6.markdown",
+      
+      "./2021/TIL6"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "Numpy",
+  "posts" : [
+      
+      "./2021/TIL6"
+      
+    ]
+  } ,
+    
+      
+  {
   "tag" : "Til",
   "posts" : [
+      
+      "./2021/TIL6.markdown",
+      
+      "./2021/TIL6",
       
       "./2021/TIL5",
       
