@@ -16,8 +16,6 @@
   "tag" : "Til",
   "posts" : [
       
-      "./2021/TIL5.markdown",
-      
       "./2021/TIL5",
       
       "./2021/TIL4",
@@ -34,8 +32,6 @@
   "tag" : "blog",
   "posts" : [
       
-      "./2021/TIL5.markdown",
-      
       "./2021/TIL5"
       
     ]
@@ -45,8 +41,6 @@
   {
   "tag" : "jekyll",
   "posts" : [
-      
-      "./2021/TIL5.markdown",
       
       "./2021/TIL5"
       

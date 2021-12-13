@@ -1,41 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-13T00:48:42+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hello</title><subtitle>for record</subtitle><author><name>이대겸</name></author><entry><title type="html">TIL 5</title><link href="http://localhost:4000/2021/TIL5.markdown" rel="alternate" type="text/html" title="TIL 5" /><published>2021-12-13T00:05:00+09:00</published><updated>2021-12-13T00:05:00+09:00</updated><id>http://localhost:4000/2021/TIL5.markdown</id><content type="html" xml:base="http://localhost:4000/2021/TIL5.markdown">일요일이 늘 그렇듯 개인 사정으로 크게 공부는 못했으나.. 일단 오늘도 백준 2문제를 푸는 걸로 
-이전에 얻었던 8일 연속 문제 해결 뱃지와 동일한 기록에 도달하였다. 목표는 현재 AI 데브코스를 듣는 기간과 거의 비슷한 128일 뱃지를 얻는 것! 
-
-그 외에는 이 블로그 관리를 위해 jekyll 공식 문서를 조금 읽어보았다.
-
-front matter는 
-~~~C
----
-layout: post
-read_time: true
----
-~~~
-이런 것으로 두 줄의 &apos;---&apos; 사이에 변수이름:값 형식으로 나열하면 되는데 이는 yaml에서 사용되는 데이터 작성을 위한 포맷이라고 한다.
-
-page는 자기소개 페이지같은 곳에 사용하는데 문제는 새로운 page를 만들었을 때 메뉴에 추가하는 방법을 아직 못 찾았다. 
-post를 좀 더 정리하기 위해서도 메뉴를 조정해야 할 것 같은데 그 방법을 소개해주는 글들과 사용하는 theme가 다르니 
-가리키는 위치에 필요한 파일이 없다거나 하는 경우로 무작정 따라할 수가 없다. 그게 이 문서를 읽고있는 이유기도 하다.
-
-한편 include에 대한 이해는 큰 도움이 되었다. 이 블로그의 내용이 들어있는 git 저장소에는 다양한 html 파일들이 있는데, 
-예를 들어 _layout 폴더의 home-page.html 파일에서 &lt;div class=&quot;search-box&quot;&gt;
-  &lt;div class=&quot;wrapper&quot;&gt;
-    &lt;div class=&quot;search-grid&quot;&gt;
-      &lt;form class=&quot;search-form&quot;&gt;
-        &lt;div id=&quot;search-container&quot;&gt;
-          &lt;input type=&quot;text&quot; id=&quot;search-input&quot; class=&quot;search&quot; placeholder=&quot;Search&quot;&gt;
-        &lt;/div&gt;
-      &lt;/form&gt;
-      &lt;ul id=&quot;results-container&quot; class=&quot;results-search&quot;&gt;&lt;/ul&gt;
-      &lt;div class=&quot;icon-close-container&quot;&gt;
-        &lt;span class=&quot;search-icon-close&quot;&gt;&lt;i class=&quot;fa fa-times&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
- 라는 표현이 있으면 
-home-page layout을 사용할 때(위의 front matter 부분에 layout: home-page를 쓰면 된다.) 
-_includes 폴더에서 search.html파일을 불러와 화면상에 표시해준다. 이걸로 post에서 필요없는 news letter를 드디어 
-삭제할 수 있었다.</content><author><name>이대겸</name></author><category term="Til" /><category term="jekyll" /><category term="blog" /><summary type="html">일요일이 늘 그렇듯 개인 사정으로 크게 공부는 못했으나.. 일단 오늘도 백준 2문제를 푸는 걸로 이전에 얻었던 8일 연속 문제 해결 뱃지와 동일한 기록에 도달하였다. 목표는 현재 AI 데브코스를 듣는 기간과 거의 비슷한 128일 뱃지를 얻는 것!</summary></entry><entry><title type="html">TIL 5</title><link href="http://localhost:4000/2021/TIL5" rel="alternate" type="text/html" title="TIL 5" /><published>2021-12-13T00:05:00+09:00</published><updated>2021-12-13T00:05:00+09:00</updated><id>http://localhost:4000/2021/TIL5</id><content type="html" xml:base="http://localhost:4000/2021/TIL5">&lt;p&gt;일요일이 늘 그렇듯 개인 사정으로 크게 공부는 못했으나.. 일단 오늘도 백준 2문제를 푸는 걸로 
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-13T00:54:08+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hello</title><subtitle>for record</subtitle><author><name>이대겸</name></author><entry><title type="html">TIL 5</title><link href="http://localhost:4000/2021/TIL5" rel="alternate" type="text/html" title="TIL 5" /><published>2021-12-13T00:05:00+09:00</published><updated>2021-12-13T00:05:00+09:00</updated><id>http://localhost:4000/2021/TIL5</id><content type="html" xml:base="http://localhost:4000/2021/TIL5">&lt;p&gt;일요일이 늘 그렇듯 개인 사정으로 크게 공부는 못했으나.. 일단 오늘도 백준 2문제를 푸는 걸로 
 이전에 얻었던 8일 연속 문제 해결 뱃지와 동일한 기록에 도달하였다. 목표는 현재 AI 데브코스를 듣는 기간과 거의 비슷한 128일 뱃지를 얻는 것!&lt;/p&gt;
 
 &lt;p&gt;그 외에는 이 블로그 관리를 위해 jekyll 공식 문서를 조금 읽어보았다.&lt;/p&gt;
@@ -53,22 +16,7 @@ post를 좀 더 정리하기 위해서도 메뉴를 조정해야 할 것 같은�
 가리키는 위치에 필요한 파일이 없다거나 하는 경우로 무작정 따라할 수가 없다. 그게 이 문서를 읽고있는 이유기도 하다.&lt;/p&gt;
 
 &lt;p&gt;한편 include에 대한 이해는 큰 도움이 되었다. 이 블로그의 내용이 들어있는 git 저장소에는 다양한 html 파일들이 있는데, 
-예를 들어 _layout 폴더의 home-page.html 파일에서 “&amp;lt;div class=&quot;search-box&quot;&amp;gt;&lt;/p&gt;
-&lt;div class=&quot;wrapper&quot;&gt;
-    &lt;div class=&quot;search-grid&quot;&gt;
-      &lt;form class=&quot;search-form&quot;&gt;
-        &lt;div id=&quot;search-container&quot;&gt;
-          &lt;input type=&quot;text&quot; id=&quot;search-input&quot; class=&quot;search&quot; placeholder=&quot;Search&quot; /&gt;
-        &lt;/div&gt;
-      &lt;/form&gt;
-      &lt;ul id=&quot;results-container&quot; class=&quot;results-search&quot;&gt;&lt;/ul&gt;
-      &lt;div class=&quot;icon-close-container&quot;&gt;
-        &lt;span class=&quot;search-icon-close&quot;&gt;&lt;i class=&quot;fa fa-times&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-      &lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-&lt;p&gt;&amp;lt;/div&amp;gt;
-“ 라는 표현이 있으면 
+예를 들어 _layout 폴더의 home-page.html 파일에서 {% include search.html %} 라는 표현이 있으면 
 home-page layout을 사용할 때(위의 front matter 부분에 layout: home-page를 쓰면 된다.) 
 _includes 폴더에서 search.html파일을 불러와 화면상에 표시해준다. 이걸로 post에서 필요없는 news letter를 드디어 
 삭제할 수 있었다.&lt;/p&gt;</content><author><name>이대겸</name></author><category term="Til" /><category term="jekyll" /><category term="blog" /><summary type="html">일요일이 늘 그렇듯 개인 사정으로 크게 공부는 못했으나.. 일단 오늘도 백준 2문제를 푸는 걸로 이전에 얻었던 8일 연속 문제 해결 뱃지와 동일한 기록에 도달하였다. 목표는 현재 AI 데브코스를 듣는 기간과 거의 비슷한 128일 뱃지를 얻는 것!</summary></entry><entry><title type="html">TIL 4</title><link href="http://localhost:4000/2021/TIL4" rel="alternate" type="text/html" title="TIL 4" /><published>2021-12-12T00:25:00+09:00</published><updated>2021-12-12T00:25:00+09:00</updated><id>http://localhost:4000/2021/TIL4</id><content type="html" xml:base="http://localhost:4000/2021/TIL4">&lt;p&gt;종만북을 보면서 알고리즘 공부를 하였다.
