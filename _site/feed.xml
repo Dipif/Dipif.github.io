@@ -1,29 +1,37 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-14T00:30:57+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hello</title><subtitle>for record</subtitle><author><name>이대겸</name></author><entry><title type="html">TIL 6</title><link href="http://localhost:4000/2021/TIL6.markdown" rel="alternate" type="text/html" title="TIL 6" /><published>2021-12-14T00:10:00+09:00</published><updated>2021-12-14T00:10:00+09:00</updated><id>http://localhost:4000/2021/TIL6.markdown</id><content type="html" xml:base="http://localhost:4000/2021/TIL6.markdown">Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 
-shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로
-~~~
-m : markdown 형식의 주석 입력
-a(above) : 현재 셀 위에 새로운 cell 추가
-b(below) : 현재 셀 아래에 새로운 cell 추가
-dd(delete) : 현재 셀 삭제
-~~~ 
-가 있다.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-14T00:46:59+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hello</title><subtitle>for record</subtitle><author><name>이대겸</name></author><entry><title type="html">TIL 6</title><link href="http://localhost:4000/2021/TIL6.markdown" rel="alternate" type="text/html" title="TIL 6" /><published>2021-12-14T00:10:00+09:00</published><updated>2021-12-14T00:10:00+09:00</updated><id>http://localhost:4000/2021/TIL6.markdown</id><content type="html" xml:base="http://localhost:4000/2021/TIL6.markdown">Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 
+shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 다음이 있다.
+
+m : markdown 형식의 주석 입력  
+a(above) : 현재 셀 위에 새로운 cell 추가  
+b(below) : 현재 셀 아래에 새로운 cell 추가  
+dd(delete) : 현재 셀 삭제  
 
 한편 jupyter notebook에 작성하는 주석의 형식도 git에 작성하는 문서의 형식과 똑같은 markdown이여서 
-**오늘** *배운* ~것들을~ 
+**오늘** *배운* ~~것들을~~ 
 - Git에서
 - 전부
 - 활용 
-가능하다!</content><author><name>이대겸</name></author><category term="Til" /><category term="Jupyter Notebook" /><category term="Markdown" /><summary type="html">Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 ~~~ m : markdown 형식의 주석 입력 a(above) : 현재 셀 위에 새로운 cell 추가 b(below) : 현재 셀 아래에 새로운 cell 추가 dd(delete) : 현재 셀 삭제 ~~~ 가 있다.</summary></entry><entry><title type="html">TIL 6</title><link href="http://localhost:4000/2021/TIL6" rel="alternate" type="text/html" title="TIL 6" /><published>2021-12-14T00:10:00+09:00</published><updated>2021-12-14T00:10:00+09:00</updated><id>http://localhost:4000/2021/TIL6</id><content type="html" xml:base="http://localhost:4000/2021/TIL6">&lt;p&gt;Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 
-shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;m : markdown 형식의 주석 입력
-a(above) : 현재 셀 위에 새로운 cell 추가
-b(below) : 현재 셀 아래에 새로운 cell 추가
-dd(delete) : 현재 셀 삭제
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;가 있다.&lt;/p&gt;
+가능하다!
+
+그 외에 numpy의 활용을 조금 맛보기.  
+**numpy.array** : numpy가 가진 고유의 배열을 만들어 주며, 생성자로 리스트를 받을 수 있다.  
+**numpy.arange** : range를 통해 만드는 리스트와 같은 numpy array를 만들어 준다.  
+**array.shape(= numpy.shape(array))** : n차원 행렬이 a_1\*a\_2\*...\*a\_m 형태일 때 
+튜플 (a\_1, a\_2, ..., a\_m)  을 리턴해준다. 1*m 꼴일 땐 (m, ) 으로 리턴한다.  
+**numpy.linalg.inv(array)** : array의 역행렬을 구해준다.
+**numpy.linalg.norm(array, ord)** : array 만 입력했을 땐 euclidean norm을  
+리턴해주는데, ord에 따라서 절대값의 합이나 가장 작은 eigen value, 
+일반적인 p-norm등으로 리턴해준다.
+~~~</content><author><name>이대겸</name></author><category term="Til" /><category term="Jupyter Notebook" /><category term="Markdown" /><category term="Numpy" /><summary type="html">Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 다음이 있다.</summary></entry><entry><title type="html">TIL 6</title><link href="http://localhost:4000/2021/TIL6" rel="alternate" type="text/html" title="TIL 6" /><published>2021-12-14T00:10:00+09:00</published><updated>2021-12-14T00:10:00+09:00</updated><id>http://localhost:4000/2021/TIL6</id><content type="html" xml:base="http://localhost:4000/2021/TIL6">&lt;p&gt;Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 
+shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 다음이 있다.&lt;/p&gt;
+
+&lt;p&gt;m : markdown 형식의 주석 입력&lt;br /&gt;
+a(above) : 현재 셀 위에 새로운 cell 추가&lt;br /&gt;
+b(below) : 현재 셀 아래에 새로운 cell 추가&lt;br /&gt;
+dd(delete) : 현재 셀 삭제&lt;/p&gt;
 
 &lt;p&gt;한편 jupyter notebook에 작성하는 주석의 형식도 git에 작성하는 문서의 형식과 똑같은 markdown이여서 
-&lt;strong&gt;오늘&lt;/strong&gt; &lt;em&gt;배운&lt;/em&gt; ~것들을~&lt;/p&gt;
+&lt;strong&gt;오늘&lt;/strong&gt; &lt;em&gt;배운&lt;/em&gt; &lt;del&gt;것들을&lt;/del&gt;&lt;/p&gt;
 &lt;ul&gt;
   &lt;li&gt;Git에서&lt;/li&gt;
   &lt;li&gt;전부&lt;/li&gt;
@@ -31,15 +39,15 @@ dd(delete) : 현재 셀 삭제
 가능하다!&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;그 외에 numpy의 활용을 조금 맛보기.&lt;/p&gt;
-&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;numpy.array : numpy가 가진 고유의 배열을 만들어 주며, 생성자로 리스트를 받을 수 있다.
-numpy.arange : range를 통해 만드는 리스트와 같은 numpy array를 만들어 준다.
-array.shape(= numpy.shape(array)) : n차원 행렬이 a&amp;lt;sub&amp;gt;1&amp;lt;/sub&amp;gt;*a&amp;lt;sub&amp;gt;2&amp;lt;/sub&amp;gt;*...*a&amp;lt;sub&amp;gt;m&amp;lt;/sub&amp;gt; 형태일 때 
-튜플 (a&amp;lt;sub&amp;gt;1&amp;lt;/sub&amp;gt;, a&amp;lt;sub&amp;gt;2&amp;lt;/sub&amp;gt;, ..., a&amp;lt;sub&amp;gt;m&amp;lt;/sub&amp;gt;) 을 리턴해준다. 1*m 꼴일 땐 (m, ) 으로 리턴한다.
-numpy.linalg.inv(array) : array의 역행렬을 구해준다.
-numpy.linalg.norm(array, ord) : array 만 입력했을 땐 euclidean norm을 리턴해주는데, ord에 따라서 절대값의 합이나 
-가장 작은 eigen value, 일반적인 p-norm등으로 리턴해준다.
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>이대겸</name></author><category term="Til" /><category term="Jupyter Notebook" /><category term="Markdown" /><category term="Numpy" /><summary type="html">Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 m : markdown 형식의 주석 입력 a(above) : 현재 셀 위에 새로운 cell 추가 b(below) : 현재 셀 아래에 새로운 cell 추가 dd(delete) : 현재 셀 삭제 가 있다.</summary></entry><entry><title type="html">TIL 5</title><link href="http://localhost:4000/2021/TIL5" rel="alternate" type="text/html" title="TIL 5" /><published>2021-12-13T00:05:00+09:00</published><updated>2021-12-13T00:05:00+09:00</updated><id>http://localhost:4000/2021/TIL5</id><content type="html" xml:base="http://localhost:4000/2021/TIL5">&lt;p&gt;일요일이 늘 그렇듯 개인 사정으로 크게 공부는 못했으나.. 일단 오늘도 백준 2문제를 푸는 걸로 
+&lt;p&gt;그 외에 numpy의 활용을 조금 맛보기.&lt;br /&gt;
+&lt;strong&gt;numpy.array&lt;/strong&gt; : numpy가 가진 고유의 배열을 만들어 주며, 생성자로 리스트를 받을 수 있다.&lt;br /&gt;
+&lt;strong&gt;numpy.arange&lt;/strong&gt; : range를 통해 만드는 리스트와 같은 numpy array를 만들어 준다.&lt;br /&gt;
+&lt;strong&gt;array.shape(= numpy.shape(array))&lt;/strong&gt; : n차원 행렬이 a_1*a_2*…*a_m 형태일 때 
+튜플 (a_1, a_2, …, a_m)  을 리턴해준다. 1*m 꼴일 땐 (m, ) 으로 리턴한다.&lt;br /&gt;
+&lt;strong&gt;numpy.linalg.inv(array)&lt;/strong&gt; : array의 역행렬을 구해준다.
+&lt;strong&gt;numpy.linalg.norm(array, ord)&lt;/strong&gt; : array 만 입력했을 땐 euclidean norm을&lt;br /&gt;
+리턴해주는데, ord에 따라서 절대값의 합이나 가장 작은 eigen value, 
+일반적인 p-norm등으로 리턴해준다.&lt;/p&gt;</content><author><name>이대겸</name></author><category term="Til" /><category term="Jupyter Notebook" /><category term="Markdown" /><category term="Numpy" /><summary type="html">Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 다음이 있다.</summary></entry><entry><title type="html">TIL 5</title><link href="http://localhost:4000/2021/TIL5" rel="alternate" type="text/html" title="TIL 5" /><published>2021-12-13T00:05:00+09:00</published><updated>2021-12-13T00:05:00+09:00</updated><id>http://localhost:4000/2021/TIL5</id><content type="html" xml:base="http://localhost:4000/2021/TIL5">&lt;p&gt;일요일이 늘 그렇듯 개인 사정으로 크게 공부는 못했으나.. 일단 오늘도 백준 2문제를 푸는 걸로 
 이전에 얻었던 8일 연속 문제 해결 뱃지와 동일한 기록에 도달하였다. 목표는 현재 AI 데브코스를 듣는 기간과 거의 비슷한 128일 뱃지를 얻는 것!&lt;/p&gt;
 
 &lt;p&gt;그 외에는 이 블로그 관리를 위해 jekyll 공식 문서를 조금 읽어보았다.&lt;/p&gt;

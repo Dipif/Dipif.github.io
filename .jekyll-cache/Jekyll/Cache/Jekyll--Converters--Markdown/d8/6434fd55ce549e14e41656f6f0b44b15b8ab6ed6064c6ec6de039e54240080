@@ -1,0 +1,28 @@
+I"$<p>Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 
+shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로</p>
+<pre><code class="language-Latex">m : markdown 형식의 주석 입력
+a(above) : 현재 셀 위에 새로운 cell 추가
+b(below) : 현재 셀 아래에 새로운 cell 추가
+dd(delete) : 현재 셀 삭제
+</code></pre>
+<p>가 있다.</p>
+
+<p>한편 jupyter notebook에 작성하는 주석의 형식도 git에 작성하는 문서의 형식과 똑같은 markdown이여서 
+<strong>오늘</strong> <em>배운</em> <del>것들을</del></p>
+<ul>
+  <li>Git에서</li>
+  <li>전부</li>
+  <li>활용 
+가능하다!
+    <pre><code class="language-Latex">그 외에 numpy의 활용을 조금 맛보기.
+numpy.array : numpy가 가진 고유의 배열을 만들어 주며, 생성자로 리스트를 받을 수 있다.
+numpy.arange : range를 통해 만드는 리스트와 같은 numpy array를 만들어 준다.
+array.shape(= numpy.shape(array)) : n차원 행렬이 a_1*a_2*...*a_m 형태일 때 
+튜플 (a_1, a_2, ..., a_m) 을 리턴해준다. 1*m 꼴일 땐 (m, ) 으로 리턴한다.
+numpy.linalg.inv(array) : array의 역행렬을 구해준다.
+numpy.linalg.norm(array, ord) : array 만 입력했을 땐 euclidean norm을 리턴해주는데, ord에 따라서 절대값의 합이나 
+가장 작은 eigen value, 일반적인 p-norm등으로 리턴해준다.
+</code></pre>
+  </li>
+</ul>
+:ET
