@@ -20,7 +20,7 @@ dd(delete) : 현재 셀 삭제
 
 한편 jupyter notebook에 작성하는 주석의 형식도 git에 작성하는 문서의 형식과 똑같은 markdown이여서 
 **오늘** *배운* ~~것들을~~ 
-- Git에서
+- Git Blog에서
 - 전부
 - 활용 
 가능하다!
@@ -33,4 +33,5 @@ dd(delete) : 현재 셀 삭제
 **numpy.linalg.inv(array)** : array의 역행렬을 구해준다.
 **numpy.linalg.norm(array, ord)** : array 만 입력했을 땐 euclidean norm을  
 리턴해주는데, ord에 따라서 절대값의 합이나 가장 작은 eigen value, 
-일반적인 p-norm등으로 리턴해준다.
+일반적인 p-norm등으로 리턴해준다.  
+** operator@(array, array) ** : 두 array의 행렬곱을 A @ B로 표현하게 해주는 연산자이다.

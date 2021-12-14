@@ -1,0 +1,19 @@
+I"<p>강의에서 선형대수를 다루다 보니 그에 관해 조금 공부를 하였다. numerical stability나 LU분해의 time complexity 등등.. 
+그러나 아직 원하는 만큼 정리되지 않아 다음에 올리도록 하겠다.</p>
+
+<p>한편 오늘은 트립을 이해하기 위해 시간을 조금 써보았다. 종만북에 나오는 트립의 구현 그 중에서 트리 split 부분은 다음과 같다.</p>
+<pre><code class="language-C++">NodePair split(Node* root, KeyType key) {
+	if (root == NULL) return NodePair(NULL, NULL);
+	if (root-&gt;key &lt; key) {
+		NodePair rs = split(root-&gt;right, key);
+		root-&gt;setRight(rs.first);
+		return NodePair(root, rs.second);
+	}
+	NodePair ls = split(root-&gt;left, key);
+	root-&gt;setLeft(ls.second);
+	return NodePair(ls.first, root);
+}
+</code></pre>
+<p>그리고 이 재귀적인 함수가 어떻게 트리를 쪼개고 합치는지 파악이 안되서 예를 들어서 직접 표현해보았다.
+<img src="./assets/img/posts/Treap_image_1.jpg" alt="tree_split" /></p>
+:ET

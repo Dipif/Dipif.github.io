@@ -3,6 +3,18 @@
 [   
       
   {
+  "tag" : "Algorithm",
+  "posts" : [
+      
+      "./2021/TIL7.markdown",
+      
+      "./2021/TIL7"
+      
+    ]
+  } ,
+    
+      
+  {
   "tag" : "Git",
   "posts" : [
       
@@ -52,6 +64,10 @@
   "tag" : "Til",
   "posts" : [
       
+      "./2021/TIL7.markdown",
+      
+      "./2021/TIL7",
+      
       "./2021/TIL6.markdown",
       
       "./2021/TIL6",
@@ -63,6 +79,18 @@
       "./2021/TIL3",
       
       "./2021/TIL2"
+      
+    ]
+  } ,
+    
+      
+  {
+  "tag" : "Treap",
+  "posts" : [
+      
+      "./2021/TIL7.markdown",
+      
+      "./2021/TIL7"
       
     ]
   } ,

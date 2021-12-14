@@ -1,28 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-14T00:46:59+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hello</title><subtitle>for record</subtitle><author><name>이대겸</name></author><entry><title type="html">TIL 6</title><link href="http://localhost:4000/2021/TIL6.markdown" rel="alternate" type="text/html" title="TIL 6" /><published>2021-12-14T00:10:00+09:00</published><updated>2021-12-14T00:10:00+09:00</updated><id>http://localhost:4000/2021/TIL6.markdown</id><content type="html" xml:base="http://localhost:4000/2021/TIL6.markdown">Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 
-shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 다음이 있다.
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-12-15T02:18:14+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Hello</title><subtitle>for record</subtitle><author><name>이대겸</name></author><entry><title type="html">TIL 7</title><link href="http://localhost:4000/2021/TIL7" rel="alternate" type="text/html" title="TIL 7" /><published>2021-12-15T01:30:00+09:00</published><updated>2021-12-15T01:30:00+09:00</updated><id>http://localhost:4000/2021/TIL7</id><content type="html" xml:base="http://localhost:4000/2021/TIL7">&lt;p&gt;강의에서 선형대수를 다루다 보니 그에 관해 조금 공부를 하였다. numerical stability나 LU분해의 time complexity 등등.. 
+그러나 아직 원하는 만큼 정리되지 않아 다음에 올리도록 하겠다.&lt;/p&gt;
 
-m : markdown 형식의 주석 입력  
-a(above) : 현재 셀 위에 새로운 cell 추가  
-b(below) : 현재 셀 아래에 새로운 cell 추가  
-dd(delete) : 현재 셀 삭제  
+&lt;p&gt;한편 오늘은 트립을 이해하기 위해 시간을 조금 써보았다. 종만북에 나오는 트립의 구현 그 중에서 트리 split 부분은 다음과 같다.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-C++&quot;&gt;NodePair split(Node* root, KeyType key) {
+	if (root == NULL) return NodePair(NULL, NULL);
+	if (root-&amp;gt;key &amp;lt; key) {
+		NodePair rs = split(root-&amp;gt;right, key);
+		root-&amp;gt;setRight(rs.first);
+		return NodePair(root, rs.second);
+	}
+	NodePair ls = split(root-&amp;gt;left, key);
+	root-&amp;gt;setLeft(ls.second);
+	return NodePair(ls.first, root);
+}
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;그리고 이 재귀적인 함수가 어떻게 트리를 쪼개고 합치는지 파악이 안되서 예를 들어서 직접 표현해보았다.
+&lt;img src=&quot;/assets/img/posts/Treap_image_1.jpg&quot; alt=&quot;tree_split&quot; /&gt;
+&lt;img src=&quot;/assets/img/posts/Treap_image_2.jpg&quot; alt=&quot;tree_split2&quot; /&gt;&lt;/p&gt;
 
-한편 jupyter notebook에 작성하는 주석의 형식도 git에 작성하는 문서의 형식과 똑같은 markdown이여서 
-**오늘** *배운* ~~것들을~~ 
-- Git에서
-- 전부
-- 활용 
-가능하다!
+&lt;p&gt;한 번 과정을 직접 따라가 보니 이해가 되었는데, 일단 재귀를 하면서 깊이 들어갈 때 루트를 보고 key와 비교해서 key보다 무조건 큰 트리 또는 
+key보다 무조건 작은 트리들을 분리해서 덜어둔다. 그리고 아직 key와의 비교가 불분명한 서브트리를 다시 들어가서 비교하고 분리하고.. 이렇게 어떤 리프 노드까지 도달한다. 
+그럼 이제 pair&amp;lt;Node, Node&amp;gt; 를 리턴하면서 돌아가는데 key보다 큰 값들이 모인 서브트리의 루트를 pair.second에, 작은 값들이 모인 서브트리의 루트를 
+pair.first에 두면서 미리 덜어내놓았던 트리와 만났을 때 그 트리의 오른쪽이 비어있으면(작은 서브트리이므로) pair.first를 붙이고 왼쪽이 붙어있으면(큰 서브트리이므로) pair.second를 붙이면서 
+다시 pair를 갱신해서 리턴하고.. 이렇게 반복해서 돌아오면 우리가 원하는 treap이 완성된다. 이 과정을 insert함수까지 포함해서 코드 20줄가량으로 표현하다니 참 대단하다. 
+종만북에서 본 내용중 스택을 이용한 울타리자르기와 쌍벽을 이룰만큼 어려웠던 것 같다.&lt;/p&gt;</content><author><name>이대겸</name></author><category term="Til" /><category term="Algorithm" /><category term="Treap" /><summary type="html">강의에서 선형대수를 다루다 보니 그에 관해 조금 공부를 하였다. numerical stability나 LU분해의 time complexity 등등.. 그러나 아직 원하는 만큼 정리되지 않아 다음에 올리도록 하겠다.</summary></entry><entry><title type="html">TIL 7</title><link href="http://localhost:4000/2021/TIL7.markdown" rel="alternate" type="text/html" title="TIL 7" /><published>2021-12-15T01:30:00+09:00</published><updated>2021-12-15T01:30:00+09:00</updated><id>http://localhost:4000/2021/TIL7.markdown</id><content type="html" xml:base="http://localhost:4000/2021/TIL7.markdown">강의에서 선형대수를 다루다 보니 그에 관해 조금 공부를 하였다. numerical stability나 LU분해의 time complexity 등등.. 
+그러나 아직 원하는 만큼 정리되지 않아 다음에 올리도록 하겠다. 
 
-그 외에 numpy의 활용을 조금 맛보기.  
-**numpy.array** : numpy가 가진 고유의 배열을 만들어 주며, 생성자로 리스트를 받을 수 있다.  
-**numpy.arange** : range를 통해 만드는 리스트와 같은 numpy array를 만들어 준다.  
-**array.shape(= numpy.shape(array))** : n차원 행렬이 a_1\*a\_2\*...\*a\_m 형태일 때 
-튜플 (a\_1, a\_2, ..., a\_m)  을 리턴해준다. 1*m 꼴일 땐 (m, ) 으로 리턴한다.  
-**numpy.linalg.inv(array)** : array의 역행렬을 구해준다.
-**numpy.linalg.norm(array, ord)** : array 만 입력했을 땐 euclidean norm을  
-리턴해주는데, ord에 따라서 절대값의 합이나 가장 작은 eigen value, 
-일반적인 p-norm등으로 리턴해준다.
-~~~</content><author><name>이대겸</name></author><category term="Til" /><category term="Jupyter Notebook" /><category term="Markdown" /><category term="Numpy" /><summary type="html">Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 다음이 있다.</summary></entry><entry><title type="html">TIL 6</title><link href="http://localhost:4000/2021/TIL6" rel="alternate" type="text/html" title="TIL 6" /><published>2021-12-14T00:10:00+09:00</published><updated>2021-12-14T00:10:00+09:00</updated><id>http://localhost:4000/2021/TIL6</id><content type="html" xml:base="http://localhost:4000/2021/TIL6">&lt;p&gt;Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 
+한편 오늘은 트립을 이해하기 위해 시간을 조금 써보았다. 종만북에 나오는 트립의 구현 그 중에서 트리 split 부분은 다음과 같다.
+~~~C++
+NodePair split(Node* root, KeyType key) {
+	if (root == NULL) return NodePair(NULL, NULL);
+	if (root-&gt;key &lt; key) {
+		NodePair rs = split(root-&gt;right, key);
+		root-&gt;setRight(rs.first);
+		return NodePair(root, rs.second);
+	}
+	NodePair ls = split(root-&gt;left, key);
+	root-&gt;setLeft(ls.second);
+	return NodePair(ls.first, root);
+}
+~~~
+그리고 이 재귀적인 함수가 어떻게 트리를 쪼개고 합치는지 파악이 안되서 예를 들어서 직접 표현해보았다.
+![tree_split](/assets/img/posts/Treap_image_1.jpg)
+![tree_split2](/img/Treap_image_2.jpg)
+
+한 번 과정을 직접 따라가 보니 이해가 되었는데, 일단 재귀를 하면서 깊이 들어갈 때 루트를 보고 key와 비교해서 key보다 무조건 큰 트리 또는 
+key보다 무조건 작은 트리들을 분리해서 덜어둔다. 그리고 아직 key와의 비교가 불분명한 서브트리를 다시 들어가서 비교하고 분리하고.. 이렇게 어떤 리프 노드까지 도달한다. 
+그럼 이제 pair&lt;Node, Node&gt; 를 리턴하면서 돌아가는데 key보다 큰 값들이 모인 서브트리의 루트를 pair.second에, 작은 값들이 모인 서브트리의 루트를 
+pair.first에 두면서 미리 덜어내놓았던 트리와 만났을 때 그 트리의 오른쪽이 비어있으면(작은 서브트리이므로) pair.first를 붙이고 왼쪽이 붙어있으면(큰 서브트리이므로) pair.second를 붙이면서 
+다시 pair를 갱신해서 리턴하고.. 이렇게 반복해서 돌아오면 우리가 원하는 treap이 완성된다. 이 과정을 insert함수까지 포함해서 코드 20줄가량으로 표현하다니 참 대단하다. 
+종만북에서 본 내용중 스택을 이용한 울타리자르기와 쌍벽을 이룰만큼 어려웠던 것 같다.</content><author><name>이대겸</name></author><category term="Til" /><category term="Algorithm" /><category term="Treap" /><summary type="html">강의에서 선형대수를 다루다 보니 그에 관해 조금 공부를 하였다. numerical stability나 LU분해의 time complexity 등등.. 그러나 아직 원하는 만큼 정리되지 않아 다음에 올리도록 하겠다.</summary></entry><entry><title type="html">TIL 6</title><link href="http://localhost:4000/2021/TIL6" rel="alternate" type="text/html" title="TIL 6" /><published>2021-12-14T00:10:00+09:00</published><updated>2021-12-14T00:10:00+09:00</updated><id>http://localhost:4000/2021/TIL6</id><content type="html" xml:base="http://localhost:4000/2021/TIL6">&lt;p&gt;Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 
 shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 다음이 있다.&lt;/p&gt;
 
 &lt;p&gt;m : markdown 형식의 주석 입력&lt;br /&gt;
@@ -33,7 +60,7 @@ dd(delete) : 현재 셀 삭제&lt;/p&gt;
 &lt;p&gt;한편 jupyter notebook에 작성하는 주석의 형식도 git에 작성하는 문서의 형식과 똑같은 markdown이여서 
 &lt;strong&gt;오늘&lt;/strong&gt; &lt;em&gt;배운&lt;/em&gt; &lt;del&gt;것들을&lt;/del&gt;&lt;/p&gt;
 &lt;ul&gt;
-  &lt;li&gt;Git에서&lt;/li&gt;
+  &lt;li&gt;Git Blog에서&lt;/li&gt;
   &lt;li&gt;전부&lt;/li&gt;
   &lt;li&gt;활용 
 가능하다!&lt;/li&gt;
@@ -47,7 +74,31 @@ dd(delete) : 현재 셀 삭제&lt;/p&gt;
 &lt;strong&gt;numpy.linalg.inv(array)&lt;/strong&gt; : array의 역행렬을 구해준다.
 &lt;strong&gt;numpy.linalg.norm(array, ord)&lt;/strong&gt; : array 만 입력했을 땐 euclidean norm을&lt;br /&gt;
 리턴해주는데, ord에 따라서 절대값의 합이나 가장 작은 eigen value, 
-일반적인 p-norm등으로 리턴해준다.&lt;/p&gt;</content><author><name>이대겸</name></author><category term="Til" /><category term="Jupyter Notebook" /><category term="Markdown" /><category term="Numpy" /><summary type="html">Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 다음이 있다.</summary></entry><entry><title type="html">TIL 5</title><link href="http://localhost:4000/2021/TIL5" rel="alternate" type="text/html" title="TIL 5" /><published>2021-12-13T00:05:00+09:00</published><updated>2021-12-13T00:05:00+09:00</updated><id>http://localhost:4000/2021/TIL5</id><content type="html" xml:base="http://localhost:4000/2021/TIL5">&lt;p&gt;일요일이 늘 그렇듯 개인 사정으로 크게 공부는 못했으나.. 일단 오늘도 백준 2문제를 푸는 걸로 
+일반적인 p-norm등으로 리턴해준다.&lt;br /&gt;
+** operator@(array, array) ** : 두 array의 행렬곱을 A @ B로 표현하게 해주는 연산자이다.&lt;/p&gt;</content><author><name>이대겸</name></author><category term="Til" /><category term="Jupyter Notebook" /><category term="Markdown" /><category term="Numpy" /><summary type="html">Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 다음이 있다.</summary></entry><entry><title type="html">TIL 6</title><link href="http://localhost:4000/2021/TIL6.markdown" rel="alternate" type="text/html" title="TIL 6" /><published>2021-12-14T00:10:00+09:00</published><updated>2021-12-14T00:10:00+09:00</updated><id>http://localhost:4000/2021/TIL6.markdown</id><content type="html" xml:base="http://localhost:4000/2021/TIL6.markdown">Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 
+shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 다음이 있다.
+
+m : markdown 형식의 주석 입력  
+a(above) : 현재 셀 위에 새로운 cell 추가  
+b(below) : 현재 셀 아래에 새로운 cell 추가  
+dd(delete) : 현재 셀 삭제  
+
+한편 jupyter notebook에 작성하는 주석의 형식도 git에 작성하는 문서의 형식과 똑같은 markdown이여서 
+**오늘** *배운* ~~것들을~~ 
+- Git Blog에서
+- 전부
+- 활용 
+가능하다!
+
+그 외에 numpy의 활용을 조금 맛보기.  
+**numpy.array** : numpy가 가진 고유의 배열을 만들어 주며, 생성자로 리스트를 받을 수 있다.  
+**numpy.arange** : range를 통해 만드는 리스트와 같은 numpy array를 만들어 준다.  
+**array.shape(= numpy.shape(array))** : n차원 행렬이 a_1\*a\_2\*...\*a\_m 형태일 때 
+튜플 (a\_1, a\_2, ..., a\_m)  을 리턴해준다. 1*m 꼴일 땐 (m, ) 으로 리턴한다.  
+**numpy.linalg.inv(array)** : array의 역행렬을 구해준다.
+**numpy.linalg.norm(array, ord)** : array 만 입력했을 땐 euclidean norm을  
+리턴해주는데, ord에 따라서 절대값의 합이나 가장 작은 eigen value, 
+일반적인 p-norm등으로 리턴해준다.</content><author><name>이대겸</name></author><category term="Til" /><category term="Jupyter Notebook" /><category term="Markdown" /><category term="Numpy" /><summary type="html">Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로 다음이 있다.</summary></entry><entry><title type="html">TIL 5</title><link href="http://localhost:4000/2021/TIL5" rel="alternate" type="text/html" title="TIL 5" /><published>2021-12-13T00:05:00+09:00</published><updated>2021-12-13T00:05:00+09:00</updated><id>http://localhost:4000/2021/TIL5</id><content type="html" xml:base="http://localhost:4000/2021/TIL5">&lt;p&gt;일요일이 늘 그렇듯 개인 사정으로 크게 공부는 못했으나.. 일단 오늘도 백준 2문제를 푸는 걸로 
 이전에 얻었던 8일 연속 문제 해결 뱃지와 동일한 기록에 도달하였다. 목표는 현재 AI 데브코스를 듣는 기간과 거의 비슷한 128일 뱃지를 얻는 것!&lt;/p&gt;
 
 &lt;p&gt;그 외에는 이 블로그 관리를 위해 jekyll 공식 문서를 조금 읽어보았다.&lt;/p&gt;

@@ -1,9 +1,0 @@
-I"<p>Jupyter notebook의 기본적인 사용법을 익혔다. Jupyter notebook은 cell 단위로 실행되며 실행하는 단축키는 
-shift + enter 이다. esc를 누르면 해당셀의 테두리가 파랗게 되면서 명령모드로 진입하는데 이 때 할 수 있는 명령으로</p>
-<pre><code class="language-Latex">m : markdown 형식의 주석 입력
-a(above) : 현재 셀 위에 새로운 cell 추가
-b(below) : 현재 셀 아래에 새로운 cell 추가
-dd(delete) : 현재 셀 삭제
-</code></pre>
-<p>가 있다.</p>
-:ET
