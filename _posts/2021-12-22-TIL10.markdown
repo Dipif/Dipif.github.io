@@ -1,0 +1,23 @@
+---
+layout: post
+read_time: true
+show_date: true
+title:  TIL 10
+date:   2021-12-22 23:45
+tags: [Til]
+author: 이대겸
+github:  
+mathjax: yes
+---
+
+pandas의 Series 및 DataFrame를 다루는 방법을 조금 배웠다.  
+Series는 1차원 array로 pandas.Series( list ) 또는 pd.Series( dict ) 로 초기화한다.  
+Series를 다루는 방식은 ndarray와 같아서 Series[Series>10] 과 같은 방식의 슬라이싱 또한 가능하다.
+심지어 numpy 함수에 ndarray 대신 넘겨줄 수도 있다.
+Series.unique() 는 값들을 중복없이 리턴해 준다.
+
+DataFrame은 table 형태의 2차원 array로 pandas.DataFrame( {key : list, key : list, ...} ) 로 초기화한다.  
+pandas.read_csv("경로") 는 csv파일을 DataFrame 형식으로 리턴해준다.  
+DataFrame.head(int), DataFrame.tale(int)로 상위 또는 하위 몇개의 row를 읽어올 수 있다.  
+Series.groupby(by = Series) 는 인자로 주어진 Series를 기준으로 기준 Series를 group화 해서 리턴한다. 이 group은 sum, mean 등의 함수로 
+재활용해서 결과를 도출해야 한다.
