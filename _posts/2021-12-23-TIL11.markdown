@@ -1,0 +1,22 @@
+---
+layout: post
+read_time: true
+show_date: true
+title:  TIL 11
+date:   2021-12-24 01:45
+tags: [Til]
+author: 이대겸
+github:  
+mathjax: yes
+---
+
+cpp에서 여러 객체들의 사이즈로 리턴되는 size_t타입은 unsigned int이다.  
+~~~C
+for (int j = 0; j < r.size() - del_v[i].size() + 1; j++) {
+}
+~~~
+오늘 이 한 줄 때문에 하루종일 <A href = "https://www.acmicpc.net/problem/16492">이 문제</A>를 붙잡고 있었다. 
+문제의 뺄셈 부분에서 빼는 부분이 더 크면 언더플로우가 발생해 버리는 것이였다. 매번 visual studio에서 이거 조심하라는 경고가 뜨지만 
+한 번도 문제가 된 적이 없었는데 기어코 경험으로 알게 되었다.
+![todayproblem](/assets/img/posts/size_t_is_unsigned.jpg)
+덕분에 assert를 이용한 방식으로 백준에서 디버그를 하는 꼼수도 알 수 있었다.
