@@ -1,0 +1,17 @@
+# Information theory  
+Ralph Hartley가 1928년에 information을 정의하며 S종류의 문자를 n글자 보낼 때 information $H = n \log S$로 정의하였다. 
+이는 현대적 의미의 information과 유사하다. 이는 이 후 1940년대에 Claude Shannon에 의해 완전히 정립되었다.
+
+확률이 작을수록 많은 정보를 가지고 있다. 사건 e의 정보량 h(e) = -log P(e)로 정의된다.  
+확률변수 x의 엔트로피 H(x) = E(h(x))  
+엔트로피가 높을수록 정보량이 많고 불확실성이 크다.  
+
+교차 엔트로피 확률분포 P,Q에 대해 
+$H(P, Q) = -sigma(P(x) log Q(x))$  
+$= H(P) + sigma(P(x) log (P(x)/Q(x)))$
+두 확률분포가 비슷할수록 교차엔트로피가 작아지므로 H(P, Q)를 loss function으로 사용할 수 있다.
+이 때 KL 다이버전스 KL(P || Q) = H(P,Q) - H(P)
+
+
+참조)  
+https://en.wikipedia.org/wiki/Information_theory
