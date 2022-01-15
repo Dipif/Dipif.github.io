@@ -3,6 +3,32 @@
   
     
     <url>
+      <loc>http://localhost:4000/2022/kaggle</loc>
+      
+        <lastmod>2022-01-16T01:45:00+09:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>0.5</priority></url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/2022/TIL12</loc>
+      
+        <lastmod>2022-01-12T01:45:00+09:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>0.5</priority></url>
+    
+  
+    
+    <url>
       <loc>http://localhost:4000/2021/TIL11</loc>
       
         <lastmod>2021-12-24T01:45:00+09:00</lastmod>
@@ -227,7 +253,7 @@
     <url>
       <loc>http://localhost:4000/404.html</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -242,7 +268,7 @@
     <url>
       <loc>http://localhost:4000/about.html</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -257,7 +283,7 @@
     <url>
       <loc>http://localhost:4000/all-posts.json</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -272,7 +298,7 @@
     <url>
       <loc>http://localhost:4000/archive.html</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -287,7 +313,7 @@
     <url>
       <loc>http://localhost:4000/archive.bak</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -302,7 +328,7 @@
     <url>
       <loc>http://localhost:4000/</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -317,7 +343,7 @@
     <url>
       <loc>http://localhost:4000/ipfs-404.html</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -332,7 +358,7 @@
     <url>
       <loc>http://localhost:4000/posts-by-tag.json</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -347,7 +373,7 @@
     <url>
       <loc>http://localhost:4000/search.json</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -364,7 +390,7 @@
     <url>
       <loc>http://localhost:4000/tag.html</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -379,7 +405,7 @@
     <url>
       <loc>http://localhost:4000/tags.html</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -394,7 +420,7 @@
     <url>
       <loc>http://localhost:4000/feed.xml</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -409,7 +435,7 @@
     <url>
       <loc>http://localhost:4000/page2/</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>
@@ -424,7 +450,22 @@
     <url>
       <loc>http://localhost:4000/page3/</loc>
       
-        <lastmod>2021-12-24T02:00:15+09:00</lastmod>
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
+      
+      
+        <changefreq>daily</changefreq>
+      
+      
+        <priority>0.5</priority>
+      
+    </url>
+    
+  
+    
+    <url>
+      <loc>http://localhost:4000/page4/</loc>
+      
+        <lastmod>2022-01-16T03:04:26+09:00</lastmod>
       
       
         <changefreq>daily</changefreq>

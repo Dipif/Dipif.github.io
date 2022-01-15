@@ -7,8 +7,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<title>Github Blog 첫 글 - Hello</title>
-	<link rel="canonical" href="http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80">
+	<title>Kaggle tabular playground Jan - 1 - Hello</title>
+	<link rel="canonical" href="http://localhost:4000/2022/kaggle">
 	<meta name="description" content="for record">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	
@@ -19,13 +19,13 @@
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "http://localhost:4000"},
-  "headline": "Github Blog 첫 글",
+  "headline": "Kaggle tabular playground Jan - 1",
   "abstract": "",
-    "keywords": "",
-    "wordcount": "9",
+    "keywords": "Kaggle",
+    "wordcount": "298",
     "image": ["http://localhost:4000/assets/img"],
-  "datePublished": "2021-12-08 20:10:00 +0900",
-  "dateModified": "2021-12-08 20:10:00 +0900",
+  "datePublished": "2022-01-16 01:45:00 +0900",
+  "dateModified": "2022-01-16 01:45:00 +0900",
   "author": {
     "@type": "Person",
     "name": "이대겸"},
@@ -40,29 +40,29 @@
 }
 </script>
 <!-- Open Graph data -->
-<meta property="og:url" content="http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80"/>
+<meta property="og:url" content="http://localhost:4000/2022/kaggle"/>
 <meta property="og:type" content="article"/>
-<meta property="og:title" content="Github Blog 첫 글"/>
+<meta property="og:title" content="Kaggle tabular playground Jan - 1"/>
 <meta property="og:description" content=""/>
 <meta property="og:image" content="http://localhost:4000/assets/img"/>
-<meta property="og:image:alt" content="Github Blog 첫 글"/>
+<meta property="og:image:alt" content="Kaggle tabular playground Jan - 1"/>
 <meta property="og:site_name" content="Hello" />
-<meta property="article:published_time" content="2021-12-08 20:10:00 +0900" />
-<meta property="article:modified_time" content="2021-12-08 20:10:00 +0900" />
-<meta property="article:tag" content="" />
+<meta property="article:published_time" content="2022-01-16 01:45:00 +0900" />
+<meta property="article:modified_time" content="2022-01-16 01:45:00 +0900" />
+<meta property="article:tag" content="Kaggle" />
 <meta property="fb:admins" content="" />
 <!-- Schema.org markup for Google -->
-<meta itemprop="name" content="Github Blog 첫 글">
+<meta itemprop="name" content="Kaggle tabular playground Jan - 1">
 <meta itemprop="description" content="">
 <meta itemprop="image" content="http://localhost:4000/assets/img">
 <!-- Twitter Card data -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="">
-<meta name="twitter:title" content="Github Blog 첫 글">
+<meta name="twitter:title" content="Kaggle tabular playground Jan - 1">
 <meta name="twitter:description" content="">
 <meta name="twitter:creator" content="">
 <meta data-rh="true" name="twitter:label1" content="Word count"/>
-<meta data-rh="true" name="twitter:data1" content="9"/>
+<meta data-rh="true" name="twitter:data1" content="298"/>
 <meta name="twitter:image:src" content="http://localhost:4000/assets/img/">
 	<!-- Windows Phone -->
 	<meta name="msapplication-navbutton-color" content="#311e3e">
@@ -139,7 +139,7 @@
 
 <section class="hidden">
   <div class="post">
-      <a  class="post-list-title" href="../2021/Github-Blog-%EC%B2%AB-%EA%B8%80">Github Blog 첫 글</a>
+      <a  class="post-list-title" href="../2022/kaggle">Kaggle tabular playground Jan - 1</a>
       
 
   <span class = "post-card-meta">
@@ -151,7 +151,7 @@
     
       
       <span class="page_meta-date">
-        <time datetime="2021-12-08T20:10:00+09:00">December 8, 2021</time>
+        <time datetime="2022-01-16T01:45:00+09:00">January 16, 2022</time>
       </span>
     
     
@@ -163,7 +163,7 @@
     
     <span class="page_meta-readtime">
       
-        less than 1 minute read
+        1 minute read
       
     </span>
   
@@ -171,7 +171,7 @@
   </span>
 
         <div class="post-excerpt">
-            <p>블로그 같은건 처음 해보는데 Github로 시작하려니 어려운 점이 많네요.</p><a class="read-more" href="../2021/Github-Blog-%EC%B2%AB-%EA%B8%80"> read more</a>
+            <p>며칠 전에 titanic으로 kaggle을 입문한 뒤 조금 더 연습해보기 위해 쉬운 competition에 참가하였다. Kaggle에서 정기적으로 열고있는 입문자를 위한 tabular playground 라는 competition이다. 그 과정을 블로그에 정리해 올려볼 생각이다.</p><p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_info.png" alt="data_info" /></p><p>먼저 데이터의 간단한 성질들을 살펴 보았다. 2015년 1월 1일부터 2018년 12월 31일까지 여러나라, 여러가게, 여러품목들이 얼마나 팔렸는지 기록되있다. 결측치가 없는 깔끔한 데이터인 것도 알 수 있었다. 참고로 이 competition의 목표는 주어진 데이터를 이용하여 2019년동안 각 물건들이 얼마나 팔릴 것인지 예측하는 것이다.</p><p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_group.png" alt="data_group" /></p><p>각 물건들의 판매량이 시간에 따라 어떻게 변화했는지 알아보기 위해 그룹별로 묶어주었다. 이 때 index를 date로, column을 적당히 조합하여 만들었는데 이 방법이 그다지 좋지 않은 느낌이 든다. 일단...<a class="read-more" href="../2022/kaggle"> read more</a>
         </div>
   </div>
 </section>
@@ -269,9 +269,9 @@
 </header> <!-- End Header -->
 
   <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="Github Blog 첫 글">
+    <meta itemprop="headline" content="Kaggle tabular playground Jan - 1">
 
-<meta itemprop="datePublished" content="2021-12-08T20:10:00+09:00">
+<meta itemprop="datePublished" content="2022-01-16T01:45:00+09:00">
 
     <!-- div class="page-image">
       <div class="cover-image" style="background: url('../assets/img/') center no-repeat; background-size: 150px;"></div>
@@ -279,7 +279,7 @@
     <div class="wrapper">
       <div class="page-content">
         <div class="header-page">
-          <h1 class="page-title">Github Blog 첫 글</h1>
+          <h1 class="page-title">Kaggle tabular playground Jan - 1</h1>
           
 
   <span class = "post-page-meta">
@@ -291,7 +291,7 @@
     
       
       <span class="page_meta-date">
-        <time datetime="2021-12-08T20:10:00+09:00">December 8, 2021</time>
+        <time datetime="2022-01-16T01:45:00+09:00">January 16, 2022</time>
       </span>
     
     
@@ -303,7 +303,7 @@
     
     <span class="page_meta-readtime">
       
-        less than 1 minute read
+        1 minute read
       
     </span>
   
@@ -322,6 +322,8 @@
     
         <ul class="tags side">
             
+                <li><a href="../tag.html?tag=Kaggle" class="tag side">Kaggle</a></li>
+            
     
         </ul>
 </div>
@@ -329,11 +331,11 @@
     <div class="share-hover side">
         <span class="share-button side"><svg fill="currentColor" width="25" height="25" class="side"><g fill-rule="evenodd"><path d="M15.6 5a.42.42 0 0 0 .17-.3.42.42 0 0 0-.12-.33l-2.8-2.79a.5.5 0 0 0-.7 0l-2.8 2.8a.4.4 0 0 0-.1.32c0 .12.07.23.16.3h.02a.45.45 0 0 0 .57-.04l2-2V10c0 .28.23.5.5.5s.5-.22.5-.5V2.93l2.02 2.02c.08.07.18.12.3.13.11.01.21-.02.3-.08v.01"></path><path d="M18 7h-1.5a.5.5 0 0 0 0 1h1.6c.5 0 .9.4.9.9v10.2c0 .5-.4.9-.9.9H6.9a.9.9 0 0 1-.9-.9V8.9c0-.5.4-.9.9-.9h1.6a.5.5 0 0 0 .35-.15A.5.5 0 0 0 9 7.5a.5.5 0 0 0-.15-.35A.5.5 0 0 0 8.5 7H7a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h11a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"></path></g></svg></span>
         <div class="share-icons side" id="sidebar-icons">
-            <a class="twitter" href="https://twitter.com/intent/tweet?text=Github Blog 첫 글&url=http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a class="facebook" href="https://facebook.com/sharer.php?u=http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a class="reddit" href="http://www.reddit.com/submit?url=http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80&title=Github Blog 첫 글" title="Submit to Reddit" rel="nofollow" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
-            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80&title=Github Blog 첫 글&summary=&source=http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80" title="Share on LinkedIn" rel="nofollow" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a class="email" href="mailto:?subject=Github Blog 첫 글&body=%0A%0ARead more here: http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80" title="Share via e-mail" rel="nofollow" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=Kaggle tabular playground Jan - 1&url=http://localhost:4000/2022/kaggle" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="facebook" href="https://facebook.com/sharer.php?u=http://localhost:4000/2022/kaggle" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a class="reddit" href="http://www.reddit.com/submit?url=http://localhost:4000/2022/kaggle&title=Kaggle tabular playground Jan - 1" title="Submit to Reddit" rel="nofollow" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2022/kaggle&title=Kaggle tabular playground Jan - 1&summary=&source=http://localhost:4000/2022/kaggle" title="Share on LinkedIn" rel="nofollow" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a class="email" href="mailto:?subject=Kaggle tabular playground Jan - 1&body=%0A%0ARead more here: http://localhost:4000/2022/kaggle" title="Share via e-mail" rel="nofollow" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
             <a class="copy-link" onclick="copyToClipboard()" title="Copy to clipboard" rel="nofollow" target="_blank"><svg width="20px" fill="currentColor" class="side" viewBox="0 0 18 18"><path d="M16.94 1.1A3.7 3.7 0 0 0 14.3 0c-1 0-1.94.39-2.64 1.1L7.43 5.3c-.91.92-2.09 3.2 0 5.27a.75.75 0 0 0 .82.16c.09-.03.17-.09.24-.15a.74.74 0 0 0 0-1.06c-1.16-1.15-.77-2.39-.02-3.16l4.24-4.22a2.2 2.2 0 0 1 1.58-.65c.6 0 1.16.23 1.58.65.86.87.86 2.29 0 3.16L12.7 8.47a.74.74 0 0 0 1.04 1.05l3.17-3.16a3.73 3.73 0 0 0 0-5.27h.03zM9.54 7.4a.74.74 0 0 0 0 1.06c1.16 1.15.76 2.39 0 3.16l-4.22 4.22c-.42.42-.99.65-1.59.65a2.23 2.23 0 0 1-1.58-3.82l3.17-3.16A.73.73 0 0 0 5.54 9a.78.78 0 0 0-.22-.52.77.77 0 0 0-1.05 0L1.1 11.64A3.72 3.72 0 0 0 3.74 18c1 0 1.94-.39 2.65-1.1l4.23-4.2c.21-.22.94-1.02 1.13-2.2.18-1.12-.2-2.15-1.12-3.07-.27-.27-.78-.27-1.06 0l-.02-.02z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a>
         </div>
     </div>
@@ -343,7 +345,41 @@
 
         
         
-        <p>블로그 같은건 처음 해보는데 Github로 시작하려니 어려운 점이 많네요.</p>
+        <p>며칠 전에 titanic으로 kaggle을 입문한 뒤 조금 더 연습해보기 위해 쉬운 competition에 참가하였다. 
+Kaggle에서 정기적으로 열고있는 입문자를 위한 tabular playground 라는 competition이다. 
+그 과정을 블로그에 정리해 올려볼 생각이다.</p>
+
+<p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_info.png" alt="data_info" /></p>
+
+<p>먼저 데이터의 간단한 성질들을 살펴 보았다. 2015년 1월 1일부터 2018년 12월 31일까지 여러나라, 여러가게, 여러품목들이 얼마나 팔렸는지 기록되있다. 
+결측치가 없는 깔끔한 데이터인 것도 알 수 있었다. 참고로 이 competition의 목표는 주어진 데이터를 이용하여 2019년동안 각 물건들이 얼마나 팔릴 것인지 
+예측하는 것이다.</p>
+
+<p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_group.png" alt="data_group" /></p>
+
+<p>각 물건들의 판매량이 시간에 따라 어떻게 변화했는지 알아보기 위해 그룹별로 묶어주었다. 이 때 index를 date로, column을 적당히 조합하여 만들었는데 
+이 방법이 그다지 좋지 않은 느낌이 든다. 일단 column에 접근하는 것이 매우 비직관적이다.</p>
+
+<p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_eda1.png" alt="eda1" /></p>
+
+<p>그래도 그룹화한 테이블을 이용하여 date를 x축으로 하는 (Sweden, KaggleMart, Kaggle Sticker)의 그래프를 그려보았다. 
+주기적으로 이상치가 관측되는 걸 알 수 있고, 이전에 date의 정렬이 이상했던 데이터가 있었던 점을 고려해 date를 살펴보았으나 문제가 없었다. 
+그러나 일단 이상치를 누그러트려 보기 위해 10-MA를 적용하여 보았다.</p>
+
+<p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_eda2.png" alt="eda2" /></p>
+
+<p>그래프가 보기 더 편해진 것과 더불어, 몇 가지 특징이 더 드러났다. 우선 연말에 발생하는 이상치 뿐만 아니라 여름 쯤에도 특이한 모양의 매출이 발생하고 있다. 
+또한 약간이나마 그래프가 우상향으로 가고 있다. 이런 점들을 고려해 몇 가지 시도를 해 볼 것이다.</p>
+<ol>
+  <li>그래프 전체에 대해 linear regression을 써 볼 수 있다. 물론 눈에 띄게 보이는 편차높은 값 들로 인해 좋은 결과를 기대할 순 없겠으나 
+다른 방법을 적용할 때 비교할 수 있는 최저한의 기준으로 삼을 수 있을 것이다.</li>
+  <li>주기적으로 반복되는 변화를 반영하기 위해서 월/일이 같은 날끼리 모아서 linear regression을 시도해 볼 수 있다. 예를 들면 2015/1/1, 2016/1/1, 
+2017/1/1 의 값 세개를 이용하여 2018/1/1의 값을 예측하는 것이다. 한편 이 방법의 문제로 regression당 사용되는 데이터가 너무 적어 
+알 수 없는 사건으로 인해 딱 하루의 값이 크게 변동하는 것 만으로 예측이 크게 어긋날 수 있다는 것이다.</li>
+  <li>연도별 평균 변화율 $\alpha$를 사용할 수 있다. $\alpha$를 일단 구하면 2015, 2016, 2017 3년간의 데이터 중에서 중위값이나 평균을 고르고 $\alpha^2$을
+곱한다던가 하는 기법 또한 적용할 수 있다.</li>
+</ol>
+
 
         <aside class="sidebar inline" id="post-end">
     
@@ -354,6 +390,8 @@
     
         <ul class="tags inline">
             
+                <li><a href="../tag.html?tag=Kaggle" class="tag inline">Kaggle</a></li>
+            
     
         </ul>
 </div>
@@ -361,11 +399,11 @@
     <div class="share-hover inline">
         <span class="share-button inline"><svg fill="currentColor" width="25" height="25" class="inline"><g fill-rule="evenodd"><path d="M15.6 5a.42.42 0 0 0 .17-.3.42.42 0 0 0-.12-.33l-2.8-2.79a.5.5 0 0 0-.7 0l-2.8 2.8a.4.4 0 0 0-.1.32c0 .12.07.23.16.3h.02a.45.45 0 0 0 .57-.04l2-2V10c0 .28.23.5.5.5s.5-.22.5-.5V2.93l2.02 2.02c.08.07.18.12.3.13.11.01.21-.02.3-.08v.01"></path><path d="M18 7h-1.5a.5.5 0 0 0 0 1h1.6c.5 0 .9.4.9.9v10.2c0 .5-.4.9-.9.9H6.9a.9.9 0 0 1-.9-.9V8.9c0-.5.4-.9.9-.9h1.6a.5.5 0 0 0 .35-.15A.5.5 0 0 0 9 7.5a.5.5 0 0 0-.15-.35A.5.5 0 0 0 8.5 7H7a2 2 0 0 0-2 2v10c0 1.1.9 2 2 2h11a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2"></path></g></svg></span>
         <div class="share-icons inline" id="post-end-icons">
-            <a class="twitter" href="https://twitter.com/intent/tweet?text=Github Blog 첫 글&url=http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-            <a class="facebook" href="https://facebook.com/sharer.php?u=http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-            <a class="reddit" href="http://www.reddit.com/submit?url=http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80&title=Github Blog 첫 글" title="Submit to Reddit" rel="nofollow" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
-            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80&title=Github Blog 첫 글&summary=&source=http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80" title="Share on LinkedIn" rel="nofollow" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            <a class="email" href="mailto:?subject=Github Blog 첫 글&body=%0A%0ARead more here: http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80" title="Share via e-mail" rel="nofollow" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+            <a class="twitter" href="https://twitter.com/intent/tweet?text=Kaggle tabular playground Jan - 1&url=http://localhost:4000/2022/kaggle" title="Share on Twitter" rel="nofollow" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a class="facebook" href="https://facebook.com/sharer.php?u=http://localhost:4000/2022/kaggle" title="Share on Facebook" rel="nofollow" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            <a class="reddit" href="http://www.reddit.com/submit?url=http://localhost:4000/2022/kaggle&title=Kaggle tabular playground Jan - 1" title="Submit to Reddit" rel="nofollow" target="_blank"><i class="fa fa-reddit" aria-hidden="true"></i></a>
+            <a class="linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=http://localhost:4000/2022/kaggle&title=Kaggle tabular playground Jan - 1&summary=&source=http://localhost:4000/2022/kaggle" title="Share on LinkedIn" rel="nofollow" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+            <a class="email" href="mailto:?subject=Kaggle tabular playground Jan - 1&body=%0A%0ARead more here: http://localhost:4000/2022/kaggle" title="Share via e-mail" rel="nofollow" target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a>
             <a class="copy-link" onclick="copyToClipboard()" title="Copy to clipboard" rel="nofollow" target="_blank"><svg width="20px" fill="currentColor" class="inline" viewBox="0 0 18 18"><path d="M16.94 1.1A3.7 3.7 0 0 0 14.3 0c-1 0-1.94.39-2.64 1.1L7.43 5.3c-.91.92-2.09 3.2 0 5.27a.75.75 0 0 0 .82.16c.09-.03.17-.09.24-.15a.74.74 0 0 0 0-1.06c-1.16-1.15-.77-2.39-.02-3.16l4.24-4.22a2.2 2.2 0 0 1 1.58-.65c.6 0 1.16.23 1.58.65.86.87.86 2.29 0 3.16L12.7 8.47a.74.74 0 0 0 1.04 1.05l3.17-3.16a3.73 3.73 0 0 0 0-5.27h.03zM9.54 7.4a.74.74 0 0 0 0 1.06c1.16 1.15.76 2.39 0 3.16l-4.22 4.22c-.42.42-.99.65-1.59.65a2.23 2.23 0 0 1-1.58-3.82l3.17-3.16A.73.73 0 0 0 5.54 9a.78.78 0 0 0-.22-.52.77.77 0 0 0-1.05 0L1.1 11.64A3.72 3.72 0 0 0 3.74 18c1 0 1.94-.39 2.65-1.1l4.23-4.2c.21-.22.94-1.02 1.13-2.2.18-1.12-.2-2.15-1.12-3.07-.27-.27-.78-.27-1.06 0l-.02-.02z" clip-rule="evenodd" fill-rule="evenodd"></path></svg></a>
         </div>
     </div>
@@ -717,14 +755,14 @@
     }
 
     function copyToClipboard() {
-      navigator.clipboard.writeText('http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80').then(function() {
+      navigator.clipboard.writeText('http://localhost:4000/2022/kaggle').then(function() {
       alerts = document.getElementsByClassName('alert')
       for (i=0; i < alerts.length; i++){
         alerts[i].innerHTML='\u00ABlink copied\u00BB';
         setTimeout((function(i){ return function(){alerts[i].innerHTML='';}})(i), 1600 );
       };
       }, function() {
-        prompt("Unable to copy, please use this link:", "http://localhost:4000/2021/Github-Blog-%EC%B2%AB-%EA%B8%80");
+        prompt("Unable to copy, please use this link:", "http://localhost:4000/2022/kaggle");
       });
     }
 

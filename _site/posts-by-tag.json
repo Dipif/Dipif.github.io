@@ -37,6 +37,16 @@
     
       
   {
+  "tag" : "Kaggle",
+  "posts" : [
+      
+      "./2022/kaggle"
+      
+    ]
+  } ,
+    
+      
+  {
   "tag" : "Markdown",
   "posts" : [
       
@@ -63,6 +73,8 @@
   {
   "tag" : "Til",
   "posts" : [
+      
+      "./2022/TIL12",
       
       "./2021/TIL11",
       

@@ -457,6 +457,55 @@
 	</div>
 
 	
+	<div id="Kaggle" class="hidden tag-master">
+		<h1>Kaggle</h1>
+		<div class="archive">
+			<div class="post-list">
+		    
+			
+
+				<div class="post">
+					<a class="post-list-title" href="./2022/kaggle">Kaggle tabular playground Jan - 1</a>
+					
+
+  <span class = "post-card-meta">
+  
+  
+    <span class="meta-pre"></span>
+  
+  
+    
+      
+      <span class="page_meta-date">
+        <time datetime="2022-01-16T01:45:00+09:00">January 16, 2022</time>
+      </span>
+    
+    
+      <span class="meta-sep"></span>
+    
+  
+  
+    
+    
+    <span class="page_meta-readtime">
+      
+        1 minute read
+      
+    </span>
+  
+  
+  </span>
+
+					<div class="post-excerpt">
+						<p>며칠 전에 titanic으로 kaggle을 입문한 뒤 조금 더 연습해보기 위해 쉬운 competition에 참가하였다. Kaggle에서 정기적으로 열고있는 입문자를 위한 tabular playground 라는 competition이다. 그 과정을 블로그에 정리해 올려볼 생각이다.</p> <p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_info.png" alt="data_info" /></p> <p>먼저 데이터의 간단한 성질들을 살펴 보았다. 2015년 1월 1일부터 2018년 12월 31일까지 여러나라, 여러가게, 여러품목들이 얼마나 팔렸는지 기록되있다. 결측치가 없는 깔끔한 데이터인 것도 알 수 있었다. 참고로 이 competition의 목표는 주어진 데이터를 이용하여 2019년동안 각 물건들이 얼마나 팔릴 것인지 예측하는 것이다.</p> <p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_group.png" alt="data_group" /></p> <p>각 물건들의 판매량이 시간에 따라 어떻게 변화했는지 알아보기 위해 그룹별로 묶어주었다. 이 때 index를 date로, column을 적당히 조합하여 만들었는데 이 방법이 그다지 좋지...<a class="read-more" href="./2022/kaggle"> read more</a>
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	</div>
+
+	
 	<div id="Markdown" class="hidden tag-master">
 		<h1>Markdown</h1>
 		<div class="archive">
@@ -641,6 +690,54 @@
 			
 
 				<div class="post">
+					<a class="post-list-title" href="./2022/TIL12">TIL 12</a>
+					
+
+  <span class = "post-card-meta">
+  
+  
+    <span class="meta-pre"></span>
+  
+  
+    
+      
+      <span class="page_meta-date">
+        <time datetime="2022-01-12T01:45:00+09:00">January 12, 2022</time>
+      </span>
+    
+    
+      <span class="meta-sep"></span>
+    
+  
+  
+    
+    
+    <span class="page_meta-readtime">
+      
+        less than 1 minute read
+      
+    </span>
+  
+  
+  </span>
+
+					<div class="post-excerpt">
+						<p>지난 이 주 동안 웹에 관해 배우느라 정신이 없었다.</p>
+
+<p>정보 이론의 개념과 교차 엔트로피를 통해 손실함수를 만들 수 있음을 배웠다.</p>
+
+<p>경사하강법을 모든 데이터셋에 대해 적용하면 너무 많은 시간이 걸리기에 SGD(Stochastic)를 통해 하는 것을 배웠다.</p>
+
+<p>백준에 라이벌 지정해뒀던 사람의 활동이 끊겼다. 다시 새로운 라이벌을 지정하고 싶지만 일일히 눌러보며 최근에 활동 중인지 확인하는 게 귀찮다. 
+지금까지 배웠던 걸로 매일 유저들의 정보를 가져와서 변화가 있는 유저들만 추려내는 프로그램을 짤 수 있을 것 같은데..</p>
+
+<a class="read-more" href="./2022/TIL12"> read more</a>
+					</div>
+				</div>
+			
+			
+
+				<div class="post">
 					<a class="post-list-title" href="./2021/TIL11">TIL 11</a>
 					
 
@@ -722,45 +819,6 @@
 
 					<div class="post-excerpt">
 						<p>pandas의 Series 및 DataFrame를 다루는 방법을 조금 배웠다.<br /> Series는 1차원 array로 pandas.Series( list ) 또는 pd.Series( dict ) 로 초기화한다.<br /> Series를 다루는 방식은 ndarray와 같아서 Series[Series&gt;10] 과 같은 방식의 슬라이싱 또한 가능하다. 심지어 numpy 함수에 ndarray 대신 넘겨줄 수도 있다. Series.unique() 는 값들을 중복없이 리턴해 준다.</p> <p>DataFrame은 table 형태의 2차원 array로 pandas.DataFrame( {key : list, key : list, …} ) 로 초기화한다.<br /> pandas.read_csv(“경로”) 는 csv파일을 DataFrame 형식으로 리턴해준다.<br /> DataFrame.head(int), DataFrame.tale(int)로 상위 또는 하위 몇개의 row를 읽어올 수 있다.<br /> Series.groupby(by = Series) 는 인자로 주어진 Series를 기준으로 기준 Series를 group화 해서 리턴한다. 이 group은 sum, mean...<a class="read-more" href="./2021/TIL10"> read more</a>
-					</div>
-				</div>
-			
-			
-
-				<div class="post">
-					<a class="post-list-title" href="./2021/TIL10.markdown">TIL 9</a>
-					
-
-  <span class = "post-card-meta">
-  
-  
-    <span class="meta-pre"></span>
-  
-  
-    
-      
-      <span class="page_meta-date">
-        <time datetime="2021-12-20T23:00:00+09:00">December 20, 2021</time>
-      </span>
-    
-    
-      <span class="meta-sep"></span>
-    
-  
-  
-    
-    
-    <span class="page_meta-readtime">
-      
-        1 minute read
-      
-    </span>
-  
-  
-  </span>
-
-					<div class="post-excerpt">
-						<p>지난주 금요일에 강의를 듣는데, 반 정도 듣자마자 전혀 머릿속에 안들어오기 시작했다. 수학과지만 통계는 고등학교 이후로 잡은 적이 없다보니 하나도 아는게 없어서 내용이 이해가 안갔다. 이틀간 introduction, statistics가 들어간 책들을 살펴봤지만 소득이 없었는데 코세라에 검색해서 나온 <a href="https://www.coursera.org/learn/stanford-statistics/home/welcome"> 이 강의 </a>가 아주 마음에 들었다. 지금 데브코스에서 듣는 강의와 다루는 내용도 비슷하고 내용은 두배 정도 늘려놔서 이해하기 더 좋았다.</p> <p>오늘 진행된 라이브세션은 꽤 재미있었다. 나동빈 강사님이 진행하셨는데 검색해보니 꽤 많은 자료가 나오는 유명인이셨다. Adversarial attack에 대해 강의하셨다.<br /> Adversarial attack이란 딥러닝으로 학습된 모델을 대상으로 기존의 데이터와 아주 살짝 비뀐 데이터를 넣어 완전히 다른 결과가 나오게 유도하는 것을 말한다.<br /> 그 방식으로 약한...<a class="read-more" href="./2021/TIL10.markdown"> read more</a>
 					</div>
 				</div>
 			
@@ -1033,13 +1091,16 @@
                 <li><a href="./tag.html?tag=Jupyter+Notebook" class="tag">Jupyter Notebook <span>(2)</span></a></li>
             
                 
+                <li><a href="./tag.html?tag=Kaggle" class="tag">Kaggle <span>(1)</span></a></li>
+            
+                
                 <li><a href="./tag.html?tag=Markdown" class="tag">Markdown <span>(2)</span></a></li>
             
                 
                 <li><a href="./tag.html?tag=Numpy" class="tag">Numpy <span>(2)</span></a></li>
             
                 
-                <li><a href="./tag.html?tag=Til" class="tag">Til <span>(15)</span></a></li>
+                <li><a href="./tag.html?tag=Til" class="tag">Til <span>(16)</span></a></li>
             
                 
                 <li><a href="./tag.html?tag=Treap" class="tag">Treap <span>(2)</span></a></li>
@@ -1088,7 +1149,7 @@
             </a>
         </div>
         <div class="copyright">
-          <p>2021 &copy; 이대겸</p>
+          <p>2022 &copy; 이대겸</p>
         </div>
         <div class="footer-nav">
             <div>
