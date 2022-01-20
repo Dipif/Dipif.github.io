@@ -465,7 +465,46 @@
 			
 
 				<div class="post">
-					<a class="post-list-title" href="./2022/kaggle">Kaggle tabular playground Jan - 1</a>
+					<a class="post-list-title" href="./kaggle/2022/tabularJan2">Kaggle tabular playground Jan - 2</a>
+					
+
+  <span class = "post-card-meta">
+  
+  
+    <span class="meta-pre"></span>
+  
+  
+    
+      
+      <span class="page_meta-date">
+        <time datetime="2022-01-20T11:40:00+09:00">January 20, 2022</time>
+      </span>
+    
+    
+      <span class="meta-sep"></span>
+    
+  
+  
+    
+    
+    <span class="page_meta-readtime">
+      
+        1 minute read
+      
+    </span>
+  
+  
+  </span>
+
+					<div class="post-excerpt">
+						<p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_eda3.png" alt="eda3" /> 이는 첫번째 방법, 모든 값들에 대해 일괄적으로 linear regression을 적용한 것이다. 위는 해당 regression의 train set 위에서의 그래프, 아래는 test set 위에서의 그래프이다. 제일 아래의 값 19560은 test set에서 측정한 MSE(mean square error)이다.</p> <p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_eda4.png" alt="eda4" /> 이는 두번째 방법, 3년을 1년단위로 나눠 3일씩 뽑은뒤 각각 regression을 적용해 준 것이다. test set에 해당 regression을 이용하여 예측한 결과 비슷한 모양을 띄고 있었으나 한눈에 보기에 편차가 매우 큼을 알 수 있다. 그러나 일단 그래프의 개형을 따라간다는 점 덕분인지 MSE가 30%이상 감소하였다. 또한 그래프의 x축 오프셋이 조금 틀어져 있는 점을 알 수 있는데, 이 이유는 마지막에 후술하겠다.</p> <p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_eda5.png"...<a class="read-more" href="./kaggle/2022/tabularJan2"> read more</a>
+					</div>
+				</div>
+			
+			
+
+				<div class="post">
+					<a class="post-list-title" href="./kaggle/2022/tabularJan1">Kaggle tabular playground Jan - 1</a>
 					
 
   <span class = "post-card-meta">
@@ -497,7 +536,7 @@
   </span>
 
 					<div class="post-excerpt">
-						<p>며칠 전에 titanic으로 kaggle을 입문한 뒤 조금 더 연습해보기 위해 쉬운 competition에 참가하였다. Kaggle에서 정기적으로 열고있는 입문자를 위한 tabular playground 라는 competition이다. 그 과정을 블로그에 정리해 올려볼 생각이다.</p> <p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_info.png" alt="data_info" /></p> <p>먼저 데이터의 간단한 성질들을 살펴 보았다. 2015년 1월 1일부터 2018년 12월 31일까지 여러나라, 여러가게, 여러품목들이 얼마나 팔렸는지 기록되있다. 결측치가 없는 깔끔한 데이터인 것도 알 수 있었다. 참고로 이 competition의 목표는 주어진 데이터를 이용하여 2019년동안 각 물건들이 얼마나 팔릴 것인지 예측하는 것이다.</p> <p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_group.png" alt="data_group" /></p> <p>각 물건들의 판매량이 시간에 따라 어떻게 변화했는지 알아보기 위해 그룹별로 묶어주었다. 이 때 index를 date로, column을 적당히 조합하여 만들었는데 이 방법이 그다지 좋지...<a class="read-more" href="./2022/kaggle"> read more</a>
+						<p>며칠 전에 titanic으로 kaggle을 입문한 뒤 조금 더 연습해보기 위해 쉬운 competition에 참가하였다. Kaggle에서 정기적으로 열고있는 입문자를 위한 tabular playground 라는 competition이다. 그 과정을 블로그에 정리해 올려볼 생각이다.</p> <p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_info.png" alt="data_info" /></p> <p>먼저 데이터의 간단한 성질들을 살펴 보았다. 2015년 1월 1일부터 2018년 12월 31일까지 여러나라, 여러가게, 여러품목들이 얼마나 팔렸는지 기록되있다. 결측치가 없는 깔끔한 데이터인 것도 알 수 있었다. 참고로 이 competition의 목표는 주어진 데이터를 이용하여 2019년동안 각 물건들이 얼마나 팔릴 것인지 예측하는 것이다.</p> <p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_group.png" alt="data_group" /></p> <p>각 물건들의 판매량이 시간에 따라 어떻게 변화했는지 알아보기 위해 그룹별로 묶어주었다. 이 때 index를 date로, column을 적당히 조합하여 만들었는데 이 방법이 그다지 좋지...<a class="read-more" href="./kaggle/2022/tabularJan1"> read more</a>
 					</div>
 				</div>
 			
@@ -1091,7 +1130,7 @@
                 <li><a href="./tag.html?tag=Jupyter+Notebook" class="tag">Jupyter Notebook <span>(2)</span></a></li>
             
                 
-                <li><a href="./tag.html?tag=Kaggle" class="tag">Kaggle <span>(1)</span></a></li>
+                <li><a href="./tag.html?tag=Kaggle" class="tag">Kaggle <span>(2)</span></a></li>
             
                 
                 <li><a href="./tag.html?tag=Markdown" class="tag">Markdown <span>(2)</span></a></li>

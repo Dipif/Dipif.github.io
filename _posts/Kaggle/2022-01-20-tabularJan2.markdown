@@ -4,8 +4,7 @@ read_time: true
 show_date: true
 title:  Kaggle tabular playground Jan - 2
 date:   2022-1-20 11:40
-categories: 
-- Kaggle
+categories: [Kaggle]
 tags: [Kaggle]
 author: 이대겸
 github:  

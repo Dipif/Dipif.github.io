@@ -1,0 +1,5 @@
+I"�<p><img src="/assets/img/posts/kgl_tabular_1/kgl_tabular1_eda3.png" alt="eda3" />
+이는 첫번째 방법, 모든 값들에 대해 일괄적으로 linear regression을 적용한 것이다. 
+위는 해당 regression의 train set 위에서의 그래프, 아래는 test set 위에서의 그래프이다.
+제일 아래의 값 19560은 test set에서 측정한 MSE(mean square error)이다.</p>
+:ET

@@ -40,7 +40,9 @@
   "tag" : "Kaggle",
   "posts" : [
       
-      "./2022/kaggle"
+      "./kaggle/2022/tabularJan2",
+      
+      "./kaggle/2022/tabularJan1"
       
     ]
   } ,
